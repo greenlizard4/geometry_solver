@@ -2,6 +2,11 @@
 #   Geometry Solver
 #
 
+lines = ['ls1','ls2','ls3','ls4','ls5','ls6','ls7','ls8','ls9','ls10','ls11','ls12']
+arcs = ['as1','as2','as3','as4','as5','as6','as7']
+areas = ['ar1','ar2','ar3','ar4','ar5','ar6','ar7','ar8','ar9']
+angles = ['a1','a2','a3','a4','a5','a6','a7','a8','a9','b1','b2','b3','b4','b5','b6','c1','c2','c3','c4','c5','c6','d1','d2','d3','d4','d5','d6']
+
 #Predicates
 
 def set_parallel(name1, name2):
@@ -98,7 +103,45 @@ def set_perpendicular(name1, name2):
     return
 
 def set_equal(name1, name2):
-    return
+    if(name1 in lines):
+        if(name1 == 'ls1'):
+            if(name2 == 'ls9'):
+                #a2 == a3, a2 == b1, a3 == b6
+                return
+        elif(name1 == 'ls2'):
+            if(name2 == 'ls5'):
+                #check if ls8 is equal
+                return
+            if(name2 == 'ls8'):
+                #check if ls5 is equal
+                return
+        elif(name1 == 'ls3'):
+            if(name2 == 'ls4'):
+                #a4 == a6, a6 == b3, a4 == b2
+                return
+            return
+        elif(name1 == 'ls4'):
+            if(name2 == 'ls3'):
+                #a4 == a6, a6 == b3, a4 == b2
+                return
+            return
+        elif(name1 == 'ls5'):
+            return
+        elif(name1 == 'ls6'):
+            return
+        elif(name1 == 'ls7'):
+            return
+        elif(name1 == 'ls8'):
+            return
+        elif(name1 == 'ls9'):
+            return
+        elif(name1 == 'ls10'):
+            return
+        elif(name1 == 'ls11'):
+            return
+        elif(name1 == 'ls12'):
+            return
+        return
 
 def set_fraction(name1, name2, fraction):
     return
@@ -259,9 +302,9 @@ def know_as5():
 def know_as6():
     return
 
-#def know_as7():
-#    circle circumference
-#    return
+def know_as7():
+    circle circumference
+    return
 
 #AREAS
 
