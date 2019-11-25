@@ -2,6 +2,9 @@ import pymysql
 import cgi
 import datetime
 
+#made a change
+
+
 db = pymysql.connect(host='localhost',
 user='gallery',
 passwd='eecs118',
