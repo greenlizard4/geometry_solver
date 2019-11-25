@@ -110,38 +110,211 @@ def set_equal(name1, name2):
                 return
         elif(name1 == 'ls2'):
             if(name2 == 'ls5'):
+                #as2 == as4
                 #check if ls8 is equal
                 return
             if(name2 == 'ls8'):
+                #as2 == as6
                 #check if ls5 is equal
                 return
         elif(name1 == 'ls3'):
             if(name2 == 'ls4'):
-                #a4 == a6, a6 == b3, a4 == b2
+                #a4 == a6
                 return
             return
         elif(name1 == 'ls4'):
             if(name2 == 'ls3'):
-                #a4 == a6, a6 == b3, a4 == b2
+                #a4 == a6
                 return
             return
         elif(name1 == 'ls5'):
+            if(name2 == 'ls2'):
+                #as4 == as2
+                #check if ls5 is equal
+                return
+            if(name2 == 'ls8'):
+                #as4 == as6
+                #check if ls2 is equal
+                return
             return
         elif(name1 == 'ls6'):
+            if(name2 == 'ls7'):
+                #a7 == a8
+                return
             return
         elif(name1 == 'ls7'):
+            if(name2 == 'ls6'):
+                #a7 == a8
+                return
             return
         elif(name1 == 'ls8'):
+            if(name2 == 'ls2'):
+                #as6 == as2
+                #check if ls5 is equal
+                return
+            if(name2 == 'ls5'):
+                #as6 == as4
+                #check if ls2 is equal
+                return
             return
         elif(name1 == 'ls9'):
+            if(name2 == 'ls1'):
+                #a2 == a3
+                return
             return
         elif(name1 == 'ls10'):
+            if(name2 == 'ls11'):
+                #a1 == a9
+                return
+            if(name2 == 'ls12'):
+                #a5 == a9
+                return
             return
         elif(name1 == 'ls11'):
+            if(name2 == 'ls10'):
+                #a1 == a9
+                return
+            if(name2 == 'ls12'):
+                #a1 == a5
+                return
             return
         elif(name1 == 'ls12'):
+            if(name2 == 'ls10'):
+                #a5 == a9
+                return
+            if(name2 == 'ls11'):
+                #a1 == a9
+                return
             return
-        return
+    elif(name1 in arcs):
+        if(name1 == 'as1'):
+            if(name2 == 'as3'):
+                #a1 == a5 ?
+                return
+            if(name2 == 'as5'):
+                #a1 == a9 ?
+                return
+            return
+        elif(name1 == 'as2'):
+            if(name2 == 'as4'):
+                #ls2 == ls5
+                #ar4 == ar5
+                return
+            if(name2 == 'as6'):
+                #ls2 == ls8
+                #ar4 == ar6
+                return
+            return
+        elif(name1 == 'as3'):
+            if(name2 == 'as1'):
+                #a5 == a1 ?
+                return
+            if(name2 == 'as5'):
+                #a5 == a9 ?
+                return
+            return
+        elif(name1 == 'as4'):
+            if(name2 == 'as2'):
+                #ls5 == ls2
+                #ar5 == ar4
+                return
+            if(name2 == 'as6'):
+                #ls5 == ls8
+                #ar5 == ar6
+            return
+        elif(name1 == 'as5'):
+            if(name2 == 'as1'):
+                #a9 == a1 ?
+                return
+            if(name2 == 'as3'):
+                #a9 == a5 ?
+                return
+            return
+        elif(name1 == 'as6'):
+            if(name2 == 'as2'):
+                #ls8 == ls2
+                #ar6 == ar4
+                return
+            id(name2 == 'as4'):
+                #ls8 == ls5
+                #ar6 == ar5
+                return
+            return
+        elif(name1 == 'as7'):
+            #?
+            return
+    elif(name1 in areas):
+        if(name1 == 'ar1'):
+            return
+        elif(name1 == 'ar2'):
+            return
+        elif(name1 == 'ar3'):
+            return
+        elif(name1 == 'ar4'):
+            return
+        elif(name1 == 'ar5'):
+            return
+        elif(name1 == 'ar6'):
+            return
+        elif(name1 == 'ar7'):
+            return
+        elif(name1 == 'ar8'):
+            return
+    elif(name1 in angles):
+        if(name1 == 'a1'):
+            return
+        elif(name1 == 'a2'):
+            return
+        elif(name1 == 'a3'):
+            return
+        elif(name1 == 'a4'):
+            return
+        elif(name1 == 'a5'):
+            return
+        elif(name1 == 'a6'):
+            return
+        elif(name1 == 'a7'):
+            return
+        elif(name1 == 'a8'):
+            return
+        elif(name1 == 'a9'):
+            return
+        elif(name1 == 'b1'):
+            return
+        elif(name1 == 'b2'):
+            return
+        elif(name1 == 'b3'):
+            return
+        elif(name1 == 'b4'):
+            return
+        elif(name1 == 'b5'):
+            return
+        elif(name1 == 'b6'):
+            return
+        elif(name1 == 'c1'):
+            return
+        elif(name1 == 'c2'):
+            return
+        elif(name1 == 'c3'):
+            return
+        elif(name1 == 'c4'):
+            return
+        elif(name1 == 'c5'):
+            return
+        elif(name1 == 'c6'):
+            return
+        elif(name1 == 'd1'):
+            return
+        elif(name1 == 'd2'):
+            return
+        elif(name1 == 'd3'):
+            return
+        elif(name1 == 'd4'):
+            return
+        elif(name1 == 'd5'):
+            return
+        elif(name1 == 'd6'):
+            return
 
 def set_fraction(name1, name2, fraction):
     return
