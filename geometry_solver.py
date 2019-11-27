@@ -9,6 +9,16 @@ angles = ['a1','a2','a3','a4','a5','a6','a7','a8','a9','b1','b2','b3','b4','b5',
 
 dictionary = {}
 
+def add_to_dictionary(key, name1, name2, value='NULL'):
+    dictionary.setdefault(key,[])
+    newList = dictionary[key]
+    if(key == 'fraction' or key == 'sum'):
+        newList.append([name1,name2,value])
+    else:
+        newList.append([name1,name2])
+    dictionary[key] = newList
+
+
 #Predicates
 
 def set_parallel(name1, name2):
