@@ -7,6 +7,8 @@ arcs = ['as1','as2','as3','as4','as5','as6','as7']
 areas = ['ar1','ar2','ar3','ar4','ar5','ar6','ar7','ar8','ar9']
 angles = ['a1','a2','a3','a4','a5','a6','a7','a8','a9','b1','b2','b3','b4','b5','b6','c1','c2','c3','c4','c5','c6','d1','d2','d3','d4','d5','d6']
 
+dictionary = {}
+
 #Predicates
 
 def set_parallel(name1, name2):
@@ -220,6 +222,7 @@ def set_equal(name1, name2):
         if(name2 == 'as6'):
             #ls5 == ls8
             #ar5 == ar6
+            return
         return
     elif(name1 == 'as5'):
         if(name2 == 'as1'):
@@ -250,6 +253,14 @@ def set_equal(name1, name2):
     elif(name1 == 'ar3'):
         return
     elif(name1 == 'ar4'):
+        if(name2 == 'ar5'):
+            #check ls3 == ls4 or a4 == a6
+            #   ar4 is congruent to ar5
+            return
+        elif(name2 == 'ar6'):
+            #check ls1 == ls9 or a2 == a3
+            #   ar4 is congruent to ar6
+            return
         return
     elif(name1 == 'ar5'):
         return
@@ -289,6 +300,7 @@ def set_equal(name1, name2):
             return
         elif(name2 == 'a9'):
             #ls10 == ls12
+            return
         return
     elif(name1 == 'a6'):
         if(name2 == 'a4'):
@@ -576,7 +588,7 @@ def know_as6():
     return
 
 def know_as7():
-    circle circumference
+    #circle circumference
     return
 
 #AREAS
@@ -611,4 +623,5 @@ def know_ar9():
 #output
 
 def get_all():
-    return
+    dictionary = {'equal':[['ls1','ls2'],['ls1','ls3']]}
+    return dictionary
