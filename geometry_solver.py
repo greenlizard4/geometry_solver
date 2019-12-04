@@ -18,6 +18,9 @@ def add_to_dictionary(key, name1, name2, value='NULL'):
         newList.append([name1,name2])
     dictionary[key] = newList
 
+def check_dictionary(key, name1, name2, value='NULL'):
+    # if exists return true
+    # else return null/false
 
 #Predicates
 
@@ -462,110 +465,214 @@ def know_a1():
     return
 
 def know_a2():
+    #doesn't account if ar4 exists or not
+    if check_dictionary("equal", "a2", "b1") == null :
+        add_to_dictionary("equal", "a2", "b1");
+        know_b1();
     return
 
 def know_a3():
+    #doesn't account if ar6 exists or not
+    if check_dictionary("equal", "a3", "b6") == null :
+        add_to_dictionary("equal", "a3", "b6");
+        know_b6();
     return
 
 def know_a4():
+    #doesn't account if ar4 exists or not
+    if check_dictionary("equal", "a4", "b2") == null :
+        add_to_dictionary("equal", "a4", "b2");
+        know_b2();
     return
 
 def know_a5():
     return
 
 def know_a6():
+    #doesn't account if ar5 exists or not
+    if check_dictionary("equal", "a6", "b3") == null :
+        add_to_dictionary("equal", "a6", "b3");
+        know_b3();
     return
 
 def know_a7():
+    #doesn't account if ar6 exists or not
+    if check_dictionary("equal", "a7", "b5") == null :
+        add_to_dictionary("equal", "a7", "b5");
+        know_b5();
     return
 
 def know_a8():
+    #doesn't account if ar5 exists or not
+    if check_dictionary("equal", "a8", "b4") == null :
+        add_to_dictionary("equal", "a8", "b4");
+        know_b4();
     return
 
 def know_a9():
     return
 
 def know_b1():
+    #doesn't account if ar1 exists or not
+    if check_dictionary("equal", "b1", "a2") == null :
+        add_to_dictionary("equal", "b1", "a2");
+        know_a2();
+
+    
     return
 
 def know_b2():
+    #doesn't account if ar2 exists or not
+    if check_dictionary("equal", "b2", "a4") == null :
+        add_to_dictionary("equal", "b2", "a4");
+        know_a4();    
     return
 
 def know_b3():
+    #doesn't account if ar2 exists or not
+    if check_dictionary("equal", "b3", "a6") == null :
+        add_to_dictionary("equal", "b3", "a6");
+        know_a6();
     return
 
 def know_b4():
+    #doesn't account if ar3 exists or not
+    if check_dictionary("equal", "b4", "a8") == null :
+        add_to_dictionary("equal", "b4", "a8");
+        know_a8();
     return
 
 def know_b5():
+    #doesn't account if ar3 exists or not
+    if check_dictionary("equal", "b5", "a7") == null :
+        add_to_dictionary("equal", "b5", "a7");
+        know_a7();
     return
 
 def know_b6():
+    #doesn't account if ar1 exists or not
+    if check_dictionary("equal", "b6", "a3") == null :
+        add_to_dictionary("equal", "b6", "a3");
+        know_a3();
     return
 
 def know_c1():
+    if check_dictionary("equal", "c1", "d1") == null :
+        add_to_dictionary("equal", "c1", "d1");
+        know_d1();
     return
 
 def know_c2():
+    if check_dictionary("equal", "c2", "d2") == null :
+        add_to_dictionary("equal", "c2", "d2");
+        know_d2();
     return
 
 def know_c3():
+    if check_dictionary("equal", "c3", "d3") == null :
+        add_to_dictionary("equal", "c3", "d3");
+        know_d3();
     return
 
 def know_c4():
+    if check_dictionary("equal", "c4", "d4") == null :
+        add_to_dictionary("equal", "c4", "d4");
+        know_d4();
     return
 
 def know_c5():
+    if check_dictionary("equal", "c5", "d5") == null :
+        add_to_dictionary("equal", "c5", "d5");
+        know_d5();
     return
 
 def know_c6():
+    if check_dictionary("equal", "c6", "d6") == null :
+        add_to_dictionary("equal", "c6", "d6");
+        know_d6();
     return
 
 def know_d1():
+    if check_dictionary("equal", "c1", "d1") == null :
+        add_to_dictionary("equal", "c1", "d1");
+        know_c1();
     return
 
 def know_d2():
+    if check_dictionary("equal", "c2", "d2") == null :
+        add_to_dictionary("equal", "c2", "d2");
+        know_c2();
     return
 
 def know_d3():
+    if check_dictionary("equal", "c3", "d3") == null :
+        add_to_dictionary("equal", "c3", "d3");
+        know_c3();
     return
 
 def know_d4():
+    if check_dictionary("equal", "c4", "d4") == null :
+        add_to_dictionary("equal", "c4", "d4");
+        know_c4();
     return
 
 def know_d5():
+    if check_dictionary("equal", "c5", "d5") == null :
+        add_to_dictionary("equal", "c5", "d5");
+        know_c5();
     return
 
 def know_d6():
+    if check_dictionary("equal", "c6", "d6") == null :
+        add_to_dictionary("equal", "c6", "d6");
+        know_c6();
     return
 
 #LINE SEGMENTS
 
 def know_ls1():
+    if check_dictionary("equal", "a2", "a3") == True and check_dictionary("equal", "ls1", "ls9") == null :
+        add_to_dictionary("equal", "ls1", "ls9");
+        know_ls9();
     return
 
 def know_ls2():
     return
 
 def know_ls3():
+    if check_dictionary("equal", "a4", "a6") == True and check_dictionary("equal", "ls3", "ls4") == null :
+        add_to_dictionary("equal", "ls3", "ls4");
+        know_ls4();
     return
 
 def know_ls4():
+    if check_dictionary("equal", "a4", "a6") == True and check_dictionary("equal", "ls3", "ls4") == null :
+        add_to_dictionary("equal", "ls3", "ls4");
+        know_ls3();
     return
 
 def know_ls5():
     return
 
 def know_ls6():
+    if check_dictionary("equal", "a7", "a8") == True and check_dictionary("equal", "ls6", "ls7") == null :
+        add_to_dictionary("equal", "ls6", "ls7");
+        know_ls7();
     return
 
 def know_ls7():
+    if check_dictionary("equal", "a7", "a8") == True and check_dictionary("equal", "ls6", "ls7") == null:
+        add_to_dictionary("equal", "ls6", "ls7");
+        know_ls6();
     return
 
 def know_ls8():
     return
 
 def know_ls9():
+    if check_dictionary("equal", "a2", "a3") == True and check_dictionary("equal", "ls1", "ls9") == null:
+        add_to_dictionary("equal", "ls1", "ls9");
+        know_ls1();
     return
 
 def know_ls10():
