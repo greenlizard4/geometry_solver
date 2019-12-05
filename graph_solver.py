@@ -19,6 +19,7 @@ except:
     print('python', sys.argv[0], '[FILENAME].csv')
     exit()
 
+print('Find s where is_path(s, A, B), no_nodes(s, C), and total_weight(s, u) where u<D')
 A = int(input('Input value for A : '))
 B = int(input('Input value for B : '))
 C = int(input('Input value for C : '))
