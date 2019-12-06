@@ -1752,7 +1752,7 @@ def know_as6():
         
         
     if check_dictionary("equal", "as2", "as6"):
-       if check_dictionary("equal", "ls1", "ls9") == False:
+        if check_dictionary("equal", "ls1", "ls9") == False:
             add_to_dictionary("equal", "ls1", "ls9");
             know_ls1();
             know_ls9();
