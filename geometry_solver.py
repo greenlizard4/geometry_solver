@@ -8,7 +8,8 @@ areas = ['ar1','ar2','ar3','ar4','ar5','ar6','ar7','ar8','ar9']
 angles = ['a1','a2','a3','a4','a5','a6','a7','a8','a9','b1','b2','b3','b4','b5','b6','c1','c2','c3','c4','c5','c6','d1','d2','d3','d4','d5','d6']
 
 dictionary = {}
-null_flag = False
+class null:
+    flag = False
 
 def add_to_dictionary(key, name1, name2, value='NULL'):
     dictionary.setdefault(key,[])
@@ -37,14 +38,14 @@ def set_parallel(name1, name2):
             return
         else:
             #NULL
-            null_flag = True
+            null.flag = True
             return
     elif(name1 in ['ls4','ls5','ls6','ls11']):
         if(name2 in ['ls4','ls5','ls6','ls11']):
             return
         else:
             #NULL
-            null_flag = True
+            null.flag = True
             return
     elif(name1 in ['ls7','ls8','ls9','ls12','ls4','ls5','ls6','ls11']):
         if(name2 in ['ls7','ls8','ls9','ls12']):
@@ -52,7 +53,7 @@ def set_parallel(name1, name2):
             return
         else:
             #NULL
-            null_flag = True
+            null.flag = True
             return
     else:
         #NULL
@@ -65,7 +66,7 @@ def set_perpendicular(name1, name2):
     if(name1 in ['ls1','ls2','ls3','ls10']):
         if(name2 in ['ls1','ls2','ls3','ls10']):
             #NULL
-            null_flag = True
+            null.flag = True
             return
         elif(name2 in ['ls4','ls5','ls6','ls11']):
             know_call(name1,name2)
@@ -75,7 +76,7 @@ def set_perpendicular(name1, name2):
             return
         else:
             #NULL
-            null_flag = True
+            null.flag = True
             return
     elif(name1 in ['ls4','ls5','ls6','ls11']):
         if(name2 in ['ls1','ls2','ls3','ls10']):
@@ -83,14 +84,14 @@ def set_perpendicular(name1, name2):
             return
         elif(name2 in ['ls4','ls5','ls6','ls11']):
             #NULL
-            null_flag = True
+            null.flag = True
             return
         elif(name2 in ['ls7','ls8','ls9','ls12']):
             know_call(name1,name2)
             return
         else:
             #NULL
-            null_flag = True
+            null.flag = True
             return
     elif(name1 in ['ls7','ls8','ls9','ls12']):
         if(name2 in ['ls1','ls2','ls3','ls10']):
@@ -101,7 +102,7 @@ def set_perpendicular(name1, name2):
             return
         else:
             #NULL
-            null_flag = True
+            null.flag = True
             return
     return
 
@@ -217,14 +218,14 @@ def set_equal(name1, name2):
         return
     elif(name1 == 'as7'):
         #NULL
-        null_flag = True
+        null.flag = True
         return
     #AREAS
     elif(name1 in ['ar8','ar9'] or name2 in ['ar8','ar9']):
         if(name1 != name2 and name1 in ['ar8','ar9'] and name2 in ['ar8','ar9']):
             know_call(name1,name2)
             return
-        null_flag = True
+        null.flag = True
         return
     elif(name1 in areas and name2 in areas):
         know_call(name1,name2)
@@ -232,7 +233,7 @@ def set_equal(name1, name2):
     elif(name1 in angles and name2 in angles):
         know_call(name1,name2)
     else:
-        null_flag = True
+        null.flag = True
         return
 
 def set_fraction(name1, name2, fraction):
@@ -244,12 +245,12 @@ def set_sum_value(name1, name2, sum_value):
     add_to_dictionary('sum_value', name1, name2, sum_value)
     if(name1 in angles and name2 in angles and sum_value > 360):
         #NULL
-        null_flag = True
+        null.flag = True
         return
         
     if(sum_value == 0):
         #NULL
-        null_flag = True
+        null.flag = True
         return
     
     know_call(name1,name2)
@@ -257,7 +258,7 @@ def set_sum_value(name1, name2, sum_value):
 
 def set_tan(name1, name2):
     #NULL
-    null_flag = True
+    null.flag = True
     return
 
 #NOT INPUTS
@@ -367,7 +368,7 @@ def know_a8():
         add_to_dictionary("equal", "a8", "b4");
         know_b4();
 
-        if check_dictionary("equal", "ls7", "ls6") and check_dictionary("equal", "a7", "a8") == False :
+    if check_dictionary("equal", "ls7", "ls6") and check_dictionary("equal", "a7", "a8") == False :
         add_to_dictionary("equal", "a7", "a8");
         know_a7();
     return
@@ -1672,6 +1673,10 @@ def know_call(name1, name2):
 #output
 
 def get_all():
-    if(null_flag):
+    if(null.flag):
         return 'null'
+    dictionary_keys = list(dictionary.keys())
+    for key in dictionary_keys:
+        if(dictionary[key] == []):
+            del dictionary[key]
     return dictionary
