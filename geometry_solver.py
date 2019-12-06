@@ -1793,7 +1793,7 @@ def know_ar3():
     return
 
 def know_ar4():
-    if check_dictionary("congruent", "ar4", "ar5"):
+    if check_dictionary("congruent", "ar4", "ar5") or check_dictionary("equal", "ar4", "ar5"):
         if check_dictionary("equal", "ls3", "ls4") == False:
             add_to_dictionary("equal", "ls3", "ls4");
             know_ls3();
@@ -1814,7 +1814,7 @@ def know_ar4():
         
         
 
-    if check_dictionary("congruent", "ar4", "ar6"):
+    if check_dictionary("congruent", "ar4", "ar6") or check_dictionary("equal", "ar4", "ar6"):
         if check_dictionary("equal", "ls1", "ls9") == False:
             add_to_dictionary("equal", "ls1", "ls9");
             know_ls1();
@@ -1837,7 +1837,7 @@ def know_ar4():
     return
 
 def know_ar5():
-    if check_dictionary("congruent", "ar4", "ar5"):
+    if check_dictionary("congruent", "ar4", "ar5") or check_dictionary("equal", "ar4", "ar5"):
         if check_dictionary("equal", "ls3", "ls4") == False:
             add_to_dictionary("equal", "ls3", "ls4");
             know_ls3();
@@ -1856,7 +1856,7 @@ def know_ar5():
             know_a4();
        
 
-    if check_dictionary("congruent", "ar5", "ar6"):
+    if check_dictionary("congruent", "ar5", "ar6") or check_dictionary("equal", "ar5", "ar6"):
         if check_dictionary("equal", "ls6", "ls7") == False:
             add_to_dictionary("equal", "ls6", "ls7");
             know_ls6();
@@ -1877,7 +1877,7 @@ def know_ar5():
     return
 
 def know_ar6():
-    if check_dictionary("congruent", "ar4", "ar6"):
+    if check_dictionary("congruent", "ar4", "ar6") or check_dictionary("equal", "ar4", "ar6"):
         if check_dictionary("equal", "ls1", "ls9") == False:
             add_to_dictionary("equal", "ls1", "ls9");
             know_ls1();
@@ -1898,7 +1898,7 @@ def know_ar6():
         
         
 
-    if check_dictionary("congruent", "ar5", "ar6"):
+    if check_dictionary("congruent", "ar5", "ar6") or check_dictionary("equal", "ar5", "ar6"):
         if check_dictionary("equal", "ls6", "ls7") == False:
             add_to_dictionary("equal", "ls6", "ls7");
             know_ls6();
