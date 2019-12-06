@@ -502,25 +502,31 @@ def know_ls2():
     if check_dictionary("equal", "ls5", "ls2"):
         if check_dictionary("equal", "as4", "as2") == False:
             add_to_dictionary("equal", "as4", "as2");
+            know_as4();
+            know_as2();
         if check_dictionary("equal", "ar5", "ar4") == False:
             add_to_dictionary("equal", "ar5", "ar4");
+            know_ar5();
+            know_ar4();
         if check_dictionary("congruent", "ar5", "ar4") == False:
             add_to_dictionary("congruent", "ar5", "ar4");
-        know_as4();
-        know_as2();
-        know_ar5();
-        know_ar4();
+            know_ar5();
+            know_ar4();
+        
     if check_dictionary("equal", "ls2", "ls8"):
         if check_dictionary("equal", "as2", "as6") == False:
             add_to_dictionary("equal", "as2", "as6");
+            know_as2();
+            know_as6();
         if check_dictionary("equal", "ar4", "ar6") == False:
             add_to_dictionary("equal", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
-        know_as2();
-        know_as6();
-        know_ar4();
-        know_ar6();
+            know_ar4();
+            know_ar6();
+
     return
 
 def know_ls3():
@@ -559,25 +565,33 @@ def know_ls5():
     if check_dictionary("equal", "ls5", "ls8"):
         if check_dictionary("equal", "as4", "as6") == False:
             add_to_dictionary("equal", "as4", "as6");
+            know_as4();
+            know_as6();
         if check_dictionary("equal", "ar5", "ar6") == False:
             add_to_dictionary("equal", "ar5", "ar6");
+            know_ar5();
+            know_ar6();
         if check_dictionary("congruent", "ar5", "ar6") == False:
             add_to_dictionary("congruent", "ar5", "ar6");
-        know_as4();
-        know_as6();
-        know_ar5();
-        know_ar6();
+            know_ar5();
+            know_ar6();
+        
+        
     if check_dictionary("equal", "ls2", "ls5"):
         if check_dictionary("equal", "as2", "as4") == False:
             add_to_dictionary("equal", "as2", "as4");
+            know_as2();
+            know_as4();
         if check_dictionary("equal", "ar4", "ar5") == False:
             add_to_dictionary("equal", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
         if check_dictionary("congruent", "ar4", "ar5") == False:
             add_to_dictionary("congruent", "ar4", "ar5");
-        know_as2();
-        know_as4();
-        know_ar4();
-        know_ar5();
+            know_ar4();
+            know_ar5();
+        
+        
     return
 
 def know_ls6():
@@ -614,25 +628,33 @@ def know_ls8():
     if check_dictionary("equal", "ls5", "ls8"):
         if check_dictionary("equal", "as4", "as6") == False:
             add_to_dictionary("equal", "as4", "as6");
+            know_as4();
+            know_as6();
         if check_dictionary("equal", "ar5", "ar6") == False:
             add_to_dictionary("equal", "ar5", "ar6");
+            know_ar5();
+            know_ar6();
         if check_dictionary("congruent", "ar5", "ar6") == False:
             add_to_dictionary("congruent", "ar5", "ar6");
-        know_as4();
-        know_as6();
-        know_ar5();
-        know_ar6();
+            know_ar5();
+            know_ar6();
+        
+        
     if check_dictionary("equal", "ls2", "ls8"):
         if check_dictionary("equal", "as2", "as6") == False:
             add_to_dictionary("equal", "as2", "as6");
+            know_as2();
+            know_as6();
         if check_dictionary("equal", "ar4", "ar6") == False:
             add_to_dictionary("equal", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
-        know_as2();
-        know_as6();
-        know_ar4();
-        know_ar6();
+            know_ar4();
+            know_ar6();
+
+        
     return
 
 def know_ls9():
@@ -651,360 +673,609 @@ def know_ls10():
     if check_dictionary("perpendicular", "ls10", "ls11") :
         if check_dictionary("perpendicular", "ls10", "ls4") == False:
             add_to_dictionary("perpendicular", "ls10", "ls4");
+            know_ls10();
+            know_ls4();
         if check_dictionary("perpendicular", "ls4", "ls3") == False:
             add_to_dictionary("perpendicular", "ls4", "ls3");
+            know_ls3();
+            know_ls4();
         if check_dictionary("perpendicular", "ls4", "ls2") == False:
             add_to_dictionary("perpendicular", "ls4", "ls2");
+            know_ls2();
+            know_ls4();
         if check_dictionary("perpendicular", "ls4", "ls1") == False:
             add_to_dictionary("perpendicular", "ls4", "ls1");
+            know_ls1();
+            know_ls4();
         if check_dictionary("perpendicular", "ls10", "ls5") == False:
             add_to_dictionary("perpendicular", "ls10", "ls5");
+            know_ls10();
+            know_ls5();
         if check_dictionary("perpendicular", "ls5", "ls3") == False:
             add_to_dictionary("perpendicular", "ls5", "ls3");
+            know_ls5();
+            know_ls3();
         if check_dictionary("perpendicular", "ls5", "ls2") == False:
             add_to_dictionary("perpendicular", "ls5", "ls2");
+            know_ls5();
+            know_ls2();
         if check_dictionary("perpendicular", "ls5", "ls1") == False:
             add_to_dictionary("perpendicular", "ls5", "ls1");
+            know_ls5();
+            know_ls1();
         if check_dictionary("perpendicular", "ls10", "ls6") == False:
             add_to_dictionary("perpendicular", "ls10", "ls6");
+            know_ls10();
+            know_ls6();
         if check_dictionary("perpendicular", "ls6", "ls3") == False:
             add_to_dictionary("perpendicular", "ls6", "ls3");
+            know_ls6();
+            know_ls3();
         if check_dictionary("perpendicular", "ls6", "ls2") == False:
             add_to_dictionary("perpendicular", "ls6", "ls2");
+            know_ls6();
+            know_ls2();
         if check_dictionary("perpendicular", "ls6", "ls1") == False:
             add_to_dictionary("perpendicular", "ls6", "ls1");
+            know_ls6();
+            know_ls1();
 
         
         if check_dictionary("perpendicular", "ls11", "ls1") == False:
             add_to_dictionary("perpendicular", "ls11", "ls1");
+            know_ls11();
+            know_ls1();
         if check_dictionary("perpendicular", "ls1", "ls4") == False:
             add_to_dictionary("perpendicular", "ls1", "ls4");
+            know_ls1();
+            know_ls4();
         if check_dictionary("perpendicular", "ls1", "ls5") == False:
             add_to_dictionary("perpendicular", "ls1", "ls5");
+            know_ls1();
+            know_ls5();
         if check_dictionary("perpendicular", "ls1", "ls6") == False:
             add_to_dictionary("perpendicular", "ls1", "ls6");
+            know_ls1();
+            know_ls6();
         if check_dictionary("perpendicular", "ls11", "ls2") == False:
             add_to_dictionary("perpendicular", "ls11", "ls2");
+            know_ls11();
+            know_ls2();
         if check_dictionary("perpendicular", "ls2", "ls4") == False:
             add_to_dictionary("perpendicular", "ls2", "ls4");
+            know_ls2();
+            know_ls4();
         if check_dictionary("perpendicular", "ls2", "ls5") == False:
             add_to_dictionary("perpendicular", "ls2", "ls5");
+            know_ls2();
+            know_ls5();
         if check_dictionary("perpendicular", "ls2", "ls6") == False:
             add_to_dictionary("perpendicular", "ls2", "ls6");
+            know_ls2();
+            know_ls6();
         if check_dictionary("perpendicular", "ls11", "ls3") == False:
             add_to_dictionary("perpendicular", "ls11", "ls3");
+            know_ls11();
+            know_ls3();
         if check_dictionary("perpendicular", "ls3", "ls4") == False:
             add_to_dictionary("perpendicular", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
         if check_dictionary("perpendicular", "ls3", "ls5") == False:
             add_to_dictionary("perpendicular", "ls3", "ls5");
+            know_ls3();
+            know_ls5();
         if check_dictionary("perpendicular", "ls3", "ls6") == False:
             add_to_dictionary("perpendicular", "ls3", "ls6");
-        know_ls1();
-        know_ls2();
-        know_ls3();
-        know_ls4();
-        know_ls5();
-        know_ls6();
-        know_ls11();
+            know_ls3();
+            know_ls6();
         
     if check_dictionary("perpendicular", "ls10", "ls12") :
         if check_dictionary("perpendicular", "ls10", "ls7") == False:
             add_to_dictionary("perpendicular", "ls10", "ls7");
+            know_ls10();
+            know_ls7();
         if check_dictionary("perpendicular", "ls7", "ls3") == False:
             add_to_dictionary("perpendicular", "ls7", "ls3");
+            know_ls7();
+            know_ls3();
         if check_dictionary("perpendicular", "ls7", "ls2") == False:
             add_to_dictionary("perpendicular", "ls7", "ls2");
+            know_ls7();
+            know_ls2();
         if check_dictionary("perpendicular", "ls7", "ls1") == False:
             add_to_dictionary("perpendicular", "ls7", "ls1");
+            know_ls7();
+            know_ls1();
         if check_dictionary("perpendicular", "ls10", "ls8") == False:
             add_to_dictionary("perpendicular", "ls10", "ls8");
+            know_ls10();
+            know_ls8();
         if check_dictionary("perpendicular", "ls8", "ls3") == False:
             add_to_dictionary("perpendicular", "ls8", "ls3");
+            know_ls8();
+            know_ls3();
         if check_dictionary("perpendicular", "ls8", "ls2") == False:
             add_to_dictionary("perpendicular", "ls8", "ls2");
+            know_ls8();
+            know_ls3();
         if check_dictionary("perpendicular", "ls8", "ls1") == False:
             add_to_dictionary("perpendicular", "ls8", "ls1");
+            know_ls8();
+            know_ls1();
         if check_dictionary("perpendicular", "ls10", "ls9") == False:
             add_to_dictionary("perpendicular", "ls10", "ls9");
+            know_ls10();
+            know_ls9();
         if check_dictionary("perpendicular", "ls9", "ls3") == False:
             add_to_dictionary("perpendicular", "ls9", "ls3");
+            know_ls9();
+            know_ls3();
         if check_dictionary("perpendicular", "ls9", "ls2") == False:
             add_to_dictionary("perpendicular", "ls9", "ls2");
+            know_ls9();
+            know_ls2();
         if check_dictionary("perpendicular", "ls9", "ls1") == False:
             add_to_dictionary("perpendicular", "ls9", "ls1");
+            know_ls9();
+            know_ls1();
 
         
         if check_dictionary("perpendicular", "ls12", "ls1") == False:
             add_to_dictionary("perpendicular", "ls12", "ls1");
+            know_ls12();
+            know_ls1();
         if check_dictionary("perpendicular", "ls1", "ls7") == False:
             add_to_dictionary("perpendicular", "ls1", "ls7");
+            know_ls1();
+            know_ls7();
         if check_dictionary("perpendicular", "ls1", "ls8") == False:
             add_to_dictionary("perpendicular", "ls1", "ls8");
+            know_ls1();
+            know_ls8();
         if check_dictionary("perpendicular", "ls1", "ls9") == False:
             add_to_dictionary("perpendicular", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
         if check_dictionary("perpendicular", "ls12", "ls2") == False:
             add_to_dictionary("perpendicular", "ls12", "ls2");
+            know_ls12();
+            know_ls2();
         if check_dictionary("perpendicular", "ls2", "ls7") == False:
             add_to_dictionary("perpendicular", "ls2", "ls7");
+            know_ls2();
+            know_ls7();
         if check_dictionary("perpendicular", "ls2", "ls8") == False:
             add_to_dictionary("perpendicular", "ls2", "ls8");
+            know_ls2();
+            know_ls8();
         if check_dictionary("perpendicular", "ls2", "ls9") == False:
             add_to_dictionary("perpendicular", "ls2", "ls9");
+            know_ls2();
+            know_ls9();
         if check_dictionary("perpendicular", "ls12", "ls3") == False:
             add_to_dictionary("perpendicular", "ls12", "ls3");
+            know_ls12();
+            know_ls3();
         if check_dictionary("perpendicular", "ls3", "ls7") == False:
             add_to_dictionary("perpendicular", "ls3", "ls7");
+            know_ls3();
+            know_ls7();
         if check_dictionary("perpendicular", "ls3", "ls8") == False:
             add_to_dictionary("perpendicular", "ls3", "ls8");
+            know_ls3();
+            know_ls8();
         if check_dictionary("perpendicular", "ls3", "ls9") == False:
             add_to_dictionary("perpendicular", "ls3", "ls9");
-        know_ls1();
-        know_ls2();
-        know_ls3();
-        know_ls7();
-        know_ls8();
-        know_ls9();
-        know_ls12();
+            know_ls3();
+            know_ls9();
+        
     return
 
 def know_ls11():
     if check_dictionary("perpendicular", "ls10", "ls11") :
         if check_dictionary("perpendicular", "ls10", "ls4") == False:
             add_to_dictionary("perpendicular", "ls10", "ls4");
+            know_ls10();
+            know_ls4();
         if check_dictionary("perpendicular", "ls4", "ls3") == False:
             add_to_dictionary("perpendicular", "ls4", "ls3");
+            know_ls3();
+            know_ls4();
         if check_dictionary("perpendicular", "ls4", "ls2") == False:
             add_to_dictionary("perpendicular", "ls4", "ls2");
+            know_ls2();
+            know_ls4();
         if check_dictionary("perpendicular", "ls4", "ls1") == False:
             add_to_dictionary("perpendicular", "ls4", "ls1");
+            know_ls1();
+            know_ls4();
         if check_dictionary("perpendicular", "ls10", "ls5") == False:
             add_to_dictionary("perpendicular", "ls10", "ls5");
+            know_ls10();
+            know_ls5();
         if check_dictionary("perpendicular", "ls5", "ls3") == False:
             add_to_dictionary("perpendicular", "ls5", "ls3");
+            know_ls5();
+            know_ls3();
         if check_dictionary("perpendicular", "ls5", "ls2") == False:
             add_to_dictionary("perpendicular", "ls5", "ls2");
+            know_ls5();
+            know_ls2();
         if check_dictionary("perpendicular", "ls5", "ls1") == False:
             add_to_dictionary("perpendicular", "ls5", "ls1");
+            know_ls5();
+            know_ls1();
         if check_dictionary("perpendicular", "ls10", "ls6") == False:
             add_to_dictionary("perpendicular", "ls10", "ls6");
+            know_ls10();
+            know_ls6();
         if check_dictionary("perpendicular", "ls6", "ls3") == False:
             add_to_dictionary("perpendicular", "ls6", "ls3");
+            know_ls10();
+            know_ls4();
         if check_dictionary("perpendicular", "ls6", "ls2") == False:
             add_to_dictionary("perpendicular", "ls6", "ls2");
+            know_ls6();
+            know_ls2();
         if check_dictionary("perpendicular", "ls6", "ls1") == False:
             add_to_dictionary("perpendicular", "ls6", "ls1");
+            know_ls6();
+            know_ls1();
 
         
         if check_dictionary("perpendicular", "ls11", "ls1") == False:
             add_to_dictionary("perpendicular", "ls11", "ls1");
+            know_ls11();
+            know_ls1();
         if check_dictionary("perpendicular", "ls1", "ls4") == False:
             add_to_dictionary("perpendicular", "ls1", "ls4");
+            know_ls1();
+            know_ls4();
         if check_dictionary("perpendicular", "ls1", "ls5") == False:
             add_to_dictionary("perpendicular", "ls1", "ls5");
+            know_ls1();
+            know_ls5();
         if check_dictionary("perpendicular", "ls1", "ls6") == False:
             add_to_dictionary("perpendicular", "ls1", "ls6");
+            know_ls1();
+            know_ls6();
         if check_dictionary("perpendicular", "ls11", "ls2") == False:
             add_to_dictionary("perpendicular", "ls11", "ls2");
+            know_ls11();
+            know_ls2();
         if check_dictionary("perpendicular", "ls2", "ls4") == False:
             add_to_dictionary("perpendicular", "ls2", "ls4");
+            know_ls2();
+            know_ls4();
         if check_dictionary("perpendicular", "ls2", "ls5") == False:
             add_to_dictionary("perpendicular", "ls2", "ls5");
+            know_ls2();
+            know_ls5();
         if check_dictionary("perpendicular", "ls2", "ls6") == False:
             add_to_dictionary("perpendicular", "ls2", "ls6");
+            know_ls2();
+            know_ls6();
         if check_dictionary("perpendicular", "ls11", "ls3") == False:
             add_to_dictionary("perpendicular", "ls11", "ls3");
+            know_ls11();
+            know_ls3();
         if check_dictionary("perpendicular", "ls3", "ls4") == False:
             add_to_dictionary("perpendicular", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
         if check_dictionary("perpendicular", "ls3", "ls5") == False:
             add_to_dictionary("perpendicular", "ls3", "ls5");
+            know_ls3();
+            know_ls5();
         if check_dictionary("perpendicular", "ls3", "ls6") == False:
             add_to_dictionary("perpendicular", "ls3", "ls6");
-        know_ls1();
-        know_ls2();
-        know_ls3();
-        know_ls4();
-        know_ls5();
-        know_ls6();
-        know_ls10();
+            know_ls3();
+            know_ls6();
+        
         
     if check_dictionary("perpendicular", "ls11", "ls12") :
         if check_dictionary("perpendicular", "ls11", "ls7") == False:
             add_to_dictionary("perpendicular", "ls11", "ls7");
+            know_ls11();
+            know_ls7();
         if check_dictionary("perpendicular", "ls7", "ls6") == False:
             add_to_dictionary("perpendicular", "ls7", "ls6");
+            know_ls7();
+            know_ls6();
         if check_dictionary("perpendicular", "ls7", "ls5") == False:
             add_to_dictionary("perpendicular", "ls7", "ls5");
+            know_ls7();
+            know_ls5();
         if check_dictionary("perpendicular", "ls7", "ls4") == False:
             add_to_dictionary("perpendicular", "ls7", "ls4");
+            know_ls7();
+            know_ls4();
         if check_dictionary("perpendicular", "ls11", "ls8") == False:
             add_to_dictionary("perpendicular", "ls11", "ls8");
+            know_ls11();
+            know_ls8();
         if check_dictionary("perpendicular", "ls8", "ls6") == False:
             add_to_dictionary("perpendicular", "ls8", "ls6");
+            know_ls8();
+            know_ls6();
         if check_dictionary("perpendicular", "ls8", "ls5") == False:
             add_to_dictionary("perpendicular", "ls8", "ls5");
+            know_ls8();
+            know_ls5();
         if check_dictionary("perpendicular", "ls8", "ls4") == False:
             add_to_dictionary("perpendicular", "ls8", "ls4");
+            know_ls8();
+            know_ls4();
         if check_dictionary("perpendicular", "ls11", "ls9") == False:
             add_to_dictionary("perpendicular", "ls11", "ls9");
+            know_ls11();
+            know_ls9();
         if check_dictionary("perpendicular", "ls9", "ls6") == False:
             add_to_dictionary("perpendicular", "ls9", "ls6");
+            know_ls9();
+            know_ls6();
         if check_dictionary("perpendicular", "ls9", "ls5") == False:
             add_to_dictionary("perpendicular", "ls9", "ls5");
+            know_ls9();
+            know_ls5();
         if check_dictionary("perpendicular", "ls9", "ls4") == False:
             add_to_dictionary("perpendicular", "ls9", "ls4");
+            know_ls9();
+            know_ls4();
 
         
         if check_dictionary("perpendicular", "ls12", "ls4") == False:
             add_to_dictionary("perpendicular", "ls12", "ls4");
+            know_ls12();
+            know_ls4();
         if check_dictionary("perpendicular", "ls4", "ls7") == False:
             add_to_dictionary("perpendicular", "ls4", "ls7");
+            know_ls4();
+            know_ls7();
         if check_dictionary("perpendicular", "ls4", "ls8") == False:
             add_to_dictionary("perpendicular", "ls4", "ls8");
+            know_ls8();
+            know_ls4();
         if check_dictionary("perpendicular", "ls4", "ls9") == False:
             add_to_dictionary("perpendicular", "ls4", "ls9");
+            know_ls9();
+            know_ls4();
         if check_dictionary("perpendicular", "ls12", "ls5") == False:
             add_to_dictionary("perpendicular", "ls12", "ls5");
+            know_ls12();
+            know_ls5();
         if check_dictionary("perpendicular", "ls5", "ls7") == False:
             add_to_dictionary("perpendicular", "ls5", "ls7");
+            know_ls5();
+            know_ls7();
         if check_dictionary("perpendicular", "ls5", "ls8") == False:
             add_to_dictionary("perpendicular", "ls5", "ls8");
+            know_ls5();
+            know_ls8();
         if check_dictionary("perpendicular", "ls5", "ls9") == False:
             add_to_dictionary("perpendicular", "ls5", "ls9");
+            know_ls5();
+            know_ls9();
         if check_dictionary("perpendicular", "ls12", "ls6") == False:
             add_to_dictionary("perpendicular", "ls12", "ls6");
+            know_ls12();
+            know_ls6();
         if check_dictionary("perpendicular", "ls6", "ls7") == False:
             add_to_dictionary("perpendicular", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
         if check_dictionary("perpendicular", "ls6", "ls8") == False:
             add_to_dictionary("perpendicular", "ls6", "ls8");
+            know_ls6();
+            know_ls8();
         if check_dictionary("perpendicular", "ls6", "ls9") == False:
             add_to_dictionary("perpendicular", "ls6", "ls9");
-        know_ls1();
-        know_ls2();
-        know_ls3();
-        know_ls7();
-        know_ls8();
-        know_ls9();
-        know_ls12();
+            know_ls6();
+            know_ls9();
     return
 
 def know_ls12():
     if check_dictionary("perpendicular", "ls10", "ls12") :
         if check_dictionary("perpendicular", "ls10", "ls7") == False:
             add_to_dictionary("perpendicular", "ls10", "ls7");
+            know_ls10();
+            know_ls7();
         if check_dictionary("perpendicular", "ls7", "ls3") == False:
             add_to_dictionary("perpendicular", "ls7", "ls3");
+            know_ls7();
+            know_ls3();
         if check_dictionary("perpendicular", "ls7", "ls2") == False:
             add_to_dictionary("perpendicular", "ls7", "ls2");
+            know_ls7();
+            know_ls2();
         if check_dictionary("perpendicular", "ls7", "ls1") == False:
             add_to_dictionary("perpendicular", "ls7", "ls1");
+            know_ls7();
+            know_ls1();
         if check_dictionary("perpendicular", "ls10", "ls8") == False:
             add_to_dictionary("perpendicular", "ls10", "ls8");
+            know_ls10();
+            know_ls8();
         if check_dictionary("perpendicular", "ls8", "ls3") == False:
             add_to_dictionary("perpendicular", "ls8", "ls3");
+            know_ls8();
+            know_ls3();
         if check_dictionary("perpendicular", "ls8", "ls2") == False:
             add_to_dictionary("perpendicular", "ls8", "ls2");
+            know_ls8();
+            know_ls2();
         if check_dictionary("perpendicular", "ls8", "ls1") == False:
             add_to_dictionary("perpendicular", "ls8", "ls1");
+            know_ls8();
+            know_ls1();
         if check_dictionary("perpendicular", "ls10", "ls9") == False:
             add_to_dictionary("perpendicular", "ls10", "ls9");
+            know_ls10();
+            know_ls9();
         if check_dictionary("perpendicular", "ls9", "ls3") == False:
             add_to_dictionary("perpendicular", "ls9", "ls3");
+            know_ls9();
+            know_ls3();
         if check_dictionary("perpendicular", "ls9", "ls2") == False:
             add_to_dictionary("perpendicular", "ls9", "ls2");
+            know_ls9();
+            know_ls2();
         if check_dictionary("perpendicular", "ls9", "ls1") == False:
             add_to_dictionary("perpendicular", "ls9", "ls1");
+            know_ls9();
+            know_ls1();
 
         
         if check_dictionary("perpendicular", "ls11", "ls7") == False:
             add_to_dictionary("perpendicular", "ls11", "ls7");
+            know_ls11();
+            know_ls7();
         if check_dictionary("perpendicular", "ls7", "ls4") == False:
             add_to_dictionary("perpendicular", "ls7", "ls4");
+            know_ls7();
+            know_ls4();
         if check_dictionary("perpendicular", "ls7", "ls5") == False:
             add_to_dictionary("perpendicular", "ls7", "ls5");
+            know_ls7();
+            know_ls5();
         if check_dictionary("perpendicular", "ls7", "ls6") == False:
             add_to_dictionary("perpendicular", "ls7", "ls6");
+            know_ls7();
+            know_ls6();
         if check_dictionary("perpendicular", "ls11", "ls8") == False:
             add_to_dictionary("perpendicular", "ls11", "ls8");
+            know_ls11();
+            know_ls8();
         if check_dictionary("perpendicular", "ls8", "ls4") == False:
             add_to_dictionary("perpendicular", "ls8", "ls4");
+            know_ls8();
+            know_ls4();
         if check_dictionary("perpendicular", "ls8", "ls5") == False:
             add_to_dictionary("perpendicular", "ls8", "ls5");
+            know_ls8();
+            know_ls5();
         if check_dictionary("perpendicular", "ls8", "ls6") == False:
             add_to_dictionary("perpendicular", "ls8", "ls6");
+            know_ls8();
+            know_ls6();
         if check_dictionary("perpendicular", "ls11", "ls9") == False:
             add_to_dictionary("perpendicular", "ls11", "ls9");
+            know_ls11();
+            know_ls9();
         if check_dictionary("perpendicular", "ls9", "ls4") == False:
             add_to_dictionary("perpendicular", "ls9", "ls4");
+            know_ls9();
+            know_ls4();
         if check_dictionary("perpendicular", "ls9", "ls5") == False:
             add_to_dictionary("perpendicular", "ls9", "ls5");
+            know_ls9();
+            know_ls5();
         if check_dictionary("perpendicular", "ls9", "ls6") == False:
             add_to_dictionary("perpendicular", "ls9", "ls6");
-        know_ls1();
-        know_ls2();
-        know_ls3();
-        know_ls4();
-        know_ls5();
-        know_ls6();
-        know_ls11();
+            know_ls9();
+            know_ls6();
         
     if check_dictionary("perpendicular", "ls10", "ls12") :
         if check_dictionary("perpendicular", "ls10", "ls7") == False:
             add_to_dictionary("perpendicular", "ls10", "ls7");
+            know_ls10();
+            know_ls7();
         if check_dictionary("perpendicular", "ls7", "ls3") == False:
             add_to_dictionary("perpendicular", "ls7", "ls3");
+            know_ls7();
+            know_ls3();
         if check_dictionary("perpendicular", "ls7", "ls2") == False:
             add_to_dictionary("perpendicular", "ls7", "ls2");
+            know_ls7();
+            know_ls2();
         if check_dictionary("perpendicular", "ls7", "ls1") == False:
             add_to_dictionary("perpendicular", "ls7", "ls1");
+            know_ls7();
+            know_ls1();
         if check_dictionary("perpendicular", "ls10", "ls8") == False:
             add_to_dictionary("perpendicular", "ls10", "ls8");
+            know_ls10();
+            know_ls8();
         if check_dictionary("perpendicular", "ls8", "ls3") == False:
             add_to_dictionary("perpendicular", "ls8", "ls3");
+            know_ls8();
+            know_ls3();
         if check_dictionary("perpendicular", "ls8", "ls2") == False:
             add_to_dictionary("perpendicular", "ls8", "ls2");
+            know_ls8();
+            know_ls2();
         if check_dictionary("perpendicular", "ls8", "ls1") == False:
             add_to_dictionary("perpendicular", "ls8", "ls1");
+            know_ls8();
+            know_ls1();
         if check_dictionary("perpendicular", "ls10", "ls9") == False:
             add_to_dictionary("perpendicular", "ls10", "ls9");
+            know_ls10();
+            know_ls9();
         if check_dictionary("perpendicular", "ls9", "ls3") == False:
             add_to_dictionary("perpendicular", "ls9", "ls3");
+            know_ls9();
+            know_ls3();
         if check_dictionary("perpendicular", "ls9", "ls2") == False:
             add_to_dictionary("perpendicular", "ls9", "ls2");
+            know_ls9();
+            know_ls2();
         if check_dictionary("perpendicular", "ls9", "ls1") == False:
             add_to_dictionary("perpendicular", "ls9", "ls1");
+            know_ls9();
+            know_ls1();
 
         
         if check_dictionary("perpendicular", "ls12", "ls1") == False:
             add_to_dictionary("perpendicular", "ls12", "ls1");
+            know_ls12();
+            know_ls1();
         if check_dictionary("perpendicular", "ls1", "ls7") == False:
             add_to_dictionary("perpendicular", "ls1", "ls7");
+            know_ls1();
+            know_ls7();
         if check_dictionary("perpendicular", "ls1", "ls8") == False:
             add_to_dictionary("perpendicular", "ls1", "ls8");
+            know_ls1();
+            know_ls8();
         if check_dictionary("perpendicular", "ls1", "ls9") == False:
             add_to_dictionary("perpendicular", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
         if check_dictionary("perpendicular", "ls12", "ls2") == False:
             add_to_dictionary("perpendicular", "ls12", "ls2");
+            know_ls12();
+            know_ls2();
         if check_dictionary("perpendicular", "ls2", "ls7") == False:
             add_to_dictionary("perpendicular", "ls2", "ls7");
+            know_ls2();
+            know_ls7();
         if check_dictionary("perpendicular", "ls2", "ls8") == False:
             add_to_dictionary("perpendicular", "ls2", "ls8");
+            know_ls2();
+            know_ls8();
         if check_dictionary("perpendicular", "ls2", "ls9") == False:
             add_to_dictionary("perpendicular", "ls2", "ls9");
+            know_ls2();
+            know_ls9();
         if check_dictionary("perpendicular", "ls12", "ls3") == False:
             add_to_dictionary("perpendicular", "ls12", "ls3");
+            know_ls12();
+            know_ls3();
         if check_dictionary("perpendicular", "ls3", "ls7") == False:
             add_to_dictionary("perpendicular", "ls3", "ls7");
+            know_ls3();
+            know_ls7();
         if check_dictionary("perpendicular", "ls3", "ls8") == False:
             add_to_dictionary("perpendicular", "ls3", "ls8");
+            know_ls3();
+            know_ls8();
         if check_dictionary("perpendicular", "ls3", "ls9") == False:
             add_to_dictionary("perpendicular", "ls3", "ls9");
-        know_ls1();
-        know_ls2();
-        know_ls3();
-        know_ls7();
-        know_ls8();
-        know_ls9();
-        know_ls10();
+            know_ls3();
+            know_ls9();
+        
     return
 
 #ARC SEGMENTS
@@ -1016,25 +1287,33 @@ def know_as2():
     if check_dictionary("equal", "as2", "as4"):
         if check_dictionary("equal", "ls2", "ls5") == False:
             add_to_dictionary("equal", "ls2", "ls5");
+            know_ls2();
+            know_ls5();
         if check_dictionary("equal", "ar4", "ar5") == False:
             add_to_dictionary("equal", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
         if check_dictionary("congruent", "ar4", "ar5") == False:
             add_to_dictionary("congruent", "ar4", "ar5");
-        know_ls2();
-        know_ls5();
-        know_ar4();
-        know_ar5();
+            know_ar4();
+            know_ar5();
+        
+        
     if check_dictionary("equal", "as2", "as6"):
         if check_dictionary("equal", "ls2", "ls8") == False:
             add_to_dictionary("equal", "ls2", "ls8");
+            know_ls2();
+            know_ls8();
         if check_dictionary("equal", "ar4", "ar6") == False:
             add_to_dictionary("equal", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
-        know_ls2();
-        know_ls8();
-        know_ar4();
-        know_ar6();
+            know_ar4();
+            know_ar6();
+        
+        
     return
 
 def know_as3():
@@ -1044,25 +1323,33 @@ def know_as4():
     if check_dictionary("equal", "as2", "as4"):
         if check_dictionary("equal", "ls2", "ls5") == False:
             add_to_dictionary("equal", "ls2", "ls5");
+            know_ls2();
+            know_ls5();
         if check_dictionary("equal", "ar4", "ar5") == False:
             add_to_dictionary("equal", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
         if check_dictionary("congruent", "ar4", "ar5") == False:
             add_to_dictionary("congruent", "ar4", "ar5");
-        know_ls2();
-        know_ls5();
-        know_ar4();
-        know_ar5();
+            know_ar4();
+            know_ar5();
+        
+        
     if check_dictionary("equal", "as4", "as6"):
         if check_dictionary("equal", "ls5", "ls8") == False:
             add_to_dictionary("equal", "ls5", "ls8");
+            know_ls5();
+            know_ls8();
         if check_dictionary("equal", "ar5", "ar6") == False:
             add_to_dictionary("equal", "ar5", "ar6");
+            know_ar5();
+            know_ar6();
         if check_dictionary("congruent", "ar5", "ar6") == False:
             add_to_dictionary("congruent", "ar5", "ar6");
-        know_ls5();
-        know_ls8();
-        know_ar5();
-        know_ar6();
+            know_ar5();
+            know_ar6();
+        
+        
     return
 
 def know_as5():
@@ -1072,25 +1359,33 @@ def know_as6():
     if check_dictionary("equal", "as4", "as6"):
         if check_dictionary("equal", "ls5", "ls8") == False:
             add_to_dictionary("equal", "ls5", "ls8");
+            know_ls5();
+            know_ls8();
         if check_dictionary("equal", "ar5", "ar6") == False:
             add_to_dictionary("equal", "ar5", "ar6");
+            know_ar5();
+            know_ar6();
         if check_dictionary("congruent", "ar5", "ar6") == False:
             add_to_dictionary("congruent", "ar5", "ar6");
-        know_ls5();
-        know_ls8();
-        know_ar5();
-        know_ar6();
+            know_ar5();
+            know_ar6();
+        
+        
     if check_dictionary("equal", "as2", "as6"):
         if check_dictionary("equal", "ls2", "ls8") == False:
             add_to_dictionary("equal", "ls2", "ls8");
+            know_ls2();
+            know_ls8();
         if check_dictionary("equal", "ar4", "ar6") == False:
             add_to_dictionary("equal", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
-        know_ls2();
-        know_ls8();
-        know_ar4();
-        know_ar6();
+            know_ar4();
+            know_ar6();
+        
+        
     return
 
 def know_as7():
@@ -1113,97 +1408,116 @@ def know_ar4():
     if check_dictionary("equal", "ar4", "ar5") or check_dictionary("congruent", "ar4", "ar5"):
         if check_dictionary("equal", "ls2", "ls5") == False:
             add_to_dictionary("equal", "ls2", "ls5");
+            know_ls2();
+            know_ls5();
         if check_dictionary("equal", "as2", "as4") == False:
             add_to_dictionary("equal", "as2", "as4");
+            know_as2();
+            know_as4();
         if check_dictionary("congruent", "ar4", "ar5") == False:
             add_to_dictionary("congruent", "ar4", "ar5");
+            know_ar5();
         if check_dictionary("equal", "ar4", "ar5") == False:
             add_to_dictionary("equal", "ar4", "ar5");
-        know_ls2();
-        know_ls5();
-        know_as2();
-        know_as4();
-        know_ar5();
+            know_ar5();
+        
+        
+        
 
     if check_dictionary("equal", "ar4", "ar6") or check_dictionary("congruent", "ar4", "ar6"):
         if check_dictionary("equal", "ls2", "ls8") == False:
             add_to_dictionary("equal", "ls2", "ls8");
+            know_ls2();
+            know_ls8();
         if check_dictionary("equal", "as2", "as6") == False:
             add_to_dictionary("equal", "as2", "as6");
+            know_as2();
+            know_as6();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
+            know_ar6();
         if check_dictionary("equal", "ar4", "ar6") == False:
             add_to_dictionary("equal", "ar4", "ar6");
-        know_ls2();
-        know_ls8();
-        know_as2();
-        know_as6();
-        know_ar6();
+            know_ar6();
+        
+        
+        
     return
 
 def know_ar5():
     if check_dictionary("equal", "ar4", "ar5") or check_dictionary("congruent", "ar4", "ar5"):
         if check_dictionary("equal", "ls2", "ls5") == False:
             add_to_dictionary("equal", "ls2", "ls5");
+            know_ls2();
+            know_ls5();
         if check_dictionary("equal", "as2", "as4") == False:
             add_to_dictionary("equal", "as2", "as4");
+            know_as2();
+            know_as4();
         if check_dictionary("congruent", "ar4", "ar5") == False:
             add_to_dictionary("congruent", "ar4", "ar5");
+            know_ar4();
         if check_dictionary("equal", "ar4", "ar5") == False:
             add_to_dictionary("equal", "ar4", "ar5");
-        know_ls2();
-        know_ls5();
-        know_as2();
-        know_as4();
-        know_ar4();
+            know_ar4();
+        
+        
+        
 
     if check_dictionary("equal", "ar5", "ar6") or check_dictionary("congruent", "ar5", "ar6"):
         if check_dictionary("equal", "ls5", "ls8") == False:
             add_to_dictionary("equal", "ls5", "ls8");
+            know_ls5();
+            know_ls8();
         if check_dictionary("equal", "as4", "as6") == False:
             add_to_dictionary("equal", "as4", "as6");
+            know_as4();
+            know_as6();
         if check_dictionary("congruent", "ar5", "ar6") == False:
             add_to_dictionary("congruent", "ar5", "ar6");
+            know_ar6();
         if check_dictionary("equal", "ar5", "ar6") == False:
             add_to_dictionary("equal", "ar5", "ar6");
-        know_ls5();
-        know_ls8();
-        know_as4();
-        know_as6();
-        know_ar6();
+            know_ar6();
+   
     return
 
 def know_ar6():
     if check_dictionary("equal", "ar4", "ar6") or check_dictionary("congruent", "ar4", "ar6"):
         if check_dictionary("equal", "ls2", "ls8") == False:
             add_to_dictionary("equal", "ls2", "ls8");
+            know_ls2();
+            know_ls8();
         if check_dictionary("equal", "as2", "as6") == False:
             add_to_dictionary("equal", "as2", "as6");
+            know_as2();
+            know_as6();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
+            know_ar4();
         if check_dictionary("equal", "ar4", "ar6") == False:
             add_to_dictionary("equal", "ar4", "ar6");
-        know_ls2();
-        know_ls8();
-        know_as2();
-        know_as6();
-        know_ar4();
+            know_ar4();
+        
+        
+        
 
     if check_dictionary("equal", "ar5", "ar6") or check_dictionary("congruent", "ar5", "ar6"):
         if check_dictionary("equal", "ls5", "ls8") == False:
             add_to_dictionary("equal", "ls5", "ls8");
+            know_ls5();
+            know_ls8();
         if check_dictionary("equal", "as4", "as6") == False:
             add_to_dictionary("equal", "as4", "as6");
+            know_as4();
+            know_as6();
         if check_dictionary("congruent", "ar5", "ar6") == False:
             add_to_dictionary("congruent", "ar5", "ar6");
+            know_ar5();
         if check_dictionary("equal", "ar5", "ar6") == False:
             add_to_dictionary("equal", "ar5", "ar6");
-        know_ls5();
-        know_ls8();
-        know_as4();
-        know_as6();
-        know_ar5();
-    
+            know_ar5();
+   
     return
 
 def know_ar7():
