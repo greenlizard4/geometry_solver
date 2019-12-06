@@ -318,6 +318,10 @@ def know_a2():
             add_to_dictionary("equal", "a3", "a4");
             know_a3();
             know_a4();
+        if check_dictionary("congruent", "ar4", "ar6") == False:
+            add_to_dictionary("congruent", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
         
         
     return
@@ -341,6 +345,10 @@ def know_a3():
             add_to_dictionary("equal", "a3", "a4");
             know_a3();
             know_a4();
+        if check_dictionary("congruent", "ar4", "ar6") == False:
+            add_to_dictionary("congruent", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
     return
 
 def know_a4():
@@ -362,6 +370,10 @@ def know_a4():
             add_to_dictionary("equal", "a8", "a4");
             know_a8();
             know_a4();
+        if check_dictionary("congruent", "ar4", "ar5") == False:
+            add_to_dictionary("congruent", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
     return
 
 def know_a5():
@@ -401,6 +413,10 @@ def know_a6():
             add_to_dictionary("equal", "a8", "a4");
             know_a8();
             know_a4();
+        if check_dictionary("congruent", "ar4", "ar5") == False:
+            add_to_dictionary("congruent", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
     return
 
 def know_a7():
@@ -422,6 +438,10 @@ def know_a7():
             add_to_dictionary("equal", "a7", "a8");
             know_a7();
             know_a8();
+        if check_dictionary("congruent", "ar6", "ar5") == False:
+            add_to_dictionary("congruent", "ar6", "ar5");
+            know_ar6();
+            know_ar5();
     return
 
 def know_a8():
@@ -442,6 +462,10 @@ def know_a8():
             add_to_dictionary("equal", "a7", "a8");
             know_a7();
             know_a8();
+        if check_dictionary("congruent", "ar6", "ar5") == False:
+            add_to_dictionary("congruent", "ar6", "ar5");
+            know_ar6();
+            know_ar5();
     return
 
 def know_a9():
@@ -463,99 +487,199 @@ def know_a9():
     return
 
 def know_b1():
-    
+    if check_dictionary("equal", "b1", "b6"):
+        if check_dictionary("equal", "ls1", "ls9") == False:
+            add_to_dictionary("equal", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
+        if check_dictionary("equal", "a2", "a3") == False:
+            add_to_dictionary("equal", "a2", "a3");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a2", "a7") == False:
+            add_to_dictionary("equal", "a2", "a7");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a3", "a4") == False:
+            add_to_dictionary("equal", "a3", "a4");
+            know_a3();
+            know_a4();
+        if check_dictionary("congruent", "ar4", "ar6") == False:
+            add_to_dictionary("congruent", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
     return
 
 def know_b2():
+    if check_dictionary("equal", "b2", "b3"):
+        if check_dictionary("equal", "ls3", "ls4") == False:
+            add_to_dictionary("equal", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
+        if check_dictionary("equal", "a2", "a6") == False:
+            add_to_dictionary("equal", "a2", "a6");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a4", "a6") == False:
+            add_to_dictionary("equal", "a4", "a6");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a8", "a4") == False:
+            add_to_dictionary("equal", "a8", "a4");
+            know_a8();
+            know_a4();
+        if check_dictionary("congruent", "ar4", "ar5") == False:
+            add_to_dictionary("congruent", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
     
     return
 
 def know_b3():
+    if check_dictionary("equal", "b2", "b3"):
+        if check_dictionary("equal", "ls3", "ls4") == False:
+            add_to_dictionary("equal", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
+        if check_dictionary("equal", "a2", "a6") == False:
+            add_to_dictionary("equal", "a2", "a6");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a4", "a6") == False:
+            add_to_dictionary("equal", "a4", "a6");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a8", "a4") == False:
+            add_to_dictionary("equal", "a8", "a4");
+            know_a8();
+            know_a4();
+        if check_dictionary("congruent", "ar4", "ar5") == False:
+            add_to_dictionary("congruent", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
 
     return
 
 def know_b4():
+    if check_dictionary("equal", "b4", "b5") :
+        if check_dictionary("equal", "ls6", "ls7") == False:
+            add_to_dictionary("equal", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
+        if check_dictionary("equal", "a8", "a3") == False:
+            add_to_dictionary("equal", "a8", "a3");
+            know_a8();
+            know_a3();
+        if check_dictionary("equal", "a7", "a6") == False:
+            add_to_dictionary("equal", "a7", "a6");
+            know_a7();
+            know_a6();
+        if check_dictionary("equal", "a7", "a8") == False:
+            add_to_dictionary("equal", "a7", "a8");
+            know_a7();
+            know_a8();
+        if check_dictionary("congruent", "ar6", "ar5") == False:
+            add_to_dictionary("congruent", "ar6", "ar5");
+            know_ar6();
+            know_ar5();
 
     return
 
 def know_b5():
+    if check_dictionary("equal", "b4", "b5") :
+        if check_dictionary("equal", "ls6", "ls7") == False:
+            add_to_dictionary("equal", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
+        if check_dictionary("equal", "a8", "a3") == False:
+            add_to_dictionary("equal", "a8", "a3");
+            know_a8();
+            know_a3();
+        if check_dictionary("equal", "a7", "a6") == False:
+            add_to_dictionary("equal", "a7", "a6");
+            know_a7();
+            know_a6();
+        if check_dictionary("equal", "a7", "a8") == False:
+            add_to_dictionary("equal", "a7", "a8");
+            know_a7();
+            know_a8();
+        if check_dictionary("congruent", "ar6", "ar5") == False:
+            add_to_dictionary("congruent", "ar6", "ar5");
+            know_ar6();
+            know_ar5();
 
     return
 
 def know_b6():
-;
+    if check_dictionary("equal", "b1", "b6"):
+        if check_dictionary("equal", "ls1", "ls9") == False:
+            add_to_dictionary("equal", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
+        if check_dictionary("equal", "a2", "a3") == False:
+            add_to_dictionary("equal", "a2", "a3");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a2", "a7") == False:
+            add_to_dictionary("equal", "a2", "a7");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a3", "a4") == False:
+            add_to_dictionary("equal", "a3", "a4");
+            know_a3();
+            know_a4();
+        if check_dictionary("congruent", "ar4", "ar6") == False:
+            add_to_dictionary("congruent", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
+
     return
 
 def know_c1():
-    if check_dictionary("equal", "c1", "d1") == False :
-        add_to_dictionary("equal", "c1", "d1");
-        know_d1();
     return
 
 def know_c2():
-    if check_dictionary("equal", "c2", "d2") == False :
-        add_to_dictionary("equal", "c2", "d2");
-        know_d2();
+    
     return
 
 def know_c3():
-    if check_dictionary("equal", "c3", "d3") == False :
-        add_to_dictionary("equal", "c3", "d3");
-        know_d3();
+    
     return
 
 def know_c4():
-    if check_dictionary("equal", "c4", "d4") == False :
-        add_to_dictionary("equal", "c4", "d4");
-        know_d4();
+    
     return
 
 def know_c5():
-    if check_dictionary("equal", "c5", "d5") == False :
-        add_to_dictionary("equal", "c5", "d5");
-        know_d5();
+    
     return
 
 def know_c6():
-    if check_dictionary("equal", "c6", "d6") == False :
-        add_to_dictionary("equal", "c6", "d6");
-        know_d6();
+    
     return
 
 def know_d1():
-    if check_dictionary("equal", "c1", "d1") == False :
-        add_to_dictionary("equal", "c1", "d1");
-        know_c1();
+   
     return
 
 def know_d2():
-    if check_dictionary("equal", "c2", "d2") == False :
-        add_to_dictionary("equal", "c2", "d2");
-        know_c2();
+    
     return
 
 def know_d3():
-    if check_dictionary("equal", "c3", "d3") == False :
-        add_to_dictionary("equal", "c3", "d3");
-        know_c3();
+    
     return
 
 def know_d4():
-    if check_dictionary("equal", "c4", "d4") == False :
-        add_to_dictionary("equal", "c4", "d4");
-        know_c4();
+   
     return
 
 def know_d5():
-    if check_dictionary("equal", "c5", "d5") == False :
-        add_to_dictionary("equal", "c5", "d5");
-        know_c5();
+   
     return
 
 def know_d6():
-    if check_dictionary("equal", "c6", "d6") == False :
-        add_to_dictionary("equal", "c6", "d6");
-        know_c6();
+    
     return
 
 #LINE SEGMENTS
@@ -574,6 +698,10 @@ def know_ls1():
             add_to_dictionary("equal", "a3", "a4");
             know_a3();
             know_a4();
+        if check_dictionary("congruent", "ar4", "ar6") == False:
+            add_to_dictionary("congruent", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
 
     if check_dictionary("perpendicular", "ls10", "ls11") == False and check_dictionary("perpendicular", "ls1", "ls11"):
         add_to_dictionary("perpendicular", "ls10", "ls11");
@@ -584,6 +712,8 @@ def know_ls1():
     return
 
 def know_ls2():
+    
+    
     if check_dictionary("perpendicular", "ls10", "ls11") == False and check_dictionary("perpendicular", "ls2", "ls11"):
         add_to_dictionary("perpendicular", "ls10", "ls11");
         know_ls11();
@@ -592,33 +722,48 @@ def know_ls2():
         know_ls12();
 
     if check_dictionary("equal", "ls5", "ls2"):
-        if check_dictionary("equal", "as4", "as2") == False:
-            add_to_dictionary("equal", "as4", "as2");
-            know_as4();
-            know_as2();
-        if check_dictionary("equal", "ar5", "ar4") == False:
-            add_to_dictionary("equal", "ar5", "ar4");
-            know_ar5();
-            know_ar4();
+        if check_dictionary("equal", "ls3", "ls4") == False:
+            add_to_dictionary("equal", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
+        if check_dictionary("equal", "a2", "a6") == False:
+            add_to_dictionary("equal", "a2", "a6");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a4", "a6") == False:
+            add_to_dictionary("equal", "a4", "a6");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a8", "a4") == False:
+            add_to_dictionary("equal", "a8", "a4");
+            know_a8();
+            know_a4();
         if check_dictionary("congruent", "ar5", "ar4") == False:
             add_to_dictionary("congruent", "ar5", "ar4");
             know_ar5();
             know_ar4();
         
     if check_dictionary("equal", "ls2", "ls8"):
-        if check_dictionary("equal", "as2", "as6") == False:
-            add_to_dictionary("equal", "as2", "as6");
-            know_as2();
-            know_as6();
-        if check_dictionary("equal", "ar4", "ar6") == False:
-            add_to_dictionary("equal", "ar4", "ar6");
-            know_ar4();
-            know_ar6();
+        if check_dictionary("equal", "ls1", "ls9") == False:
+            add_to_dictionary("equal", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
+        if check_dictionary("equal", "a2", "a3") == False:
+            add_to_dictionary("equal", "a2", "a3");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a2", "a7") == False:
+            add_to_dictionary("equal", "a2", "a7");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a3", "a4") == False:
+            add_to_dictionary("equal", "a3", "a4");
+            know_a3();
+            know_a4();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
             know_ar4();
             know_ar6();
-
     return
 
 def know_ls3():
@@ -635,6 +780,10 @@ def know_ls3():
             add_to_dictionary("equal", "a8", "a4");
             know_a8();
             know_a4();
+        if check_dictionary("congruent", "ar4", "ar5") == False:
+            add_to_dictionary("congruent", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
 
     if check_dictionary("perpendicular", "ls10", "ls11") == False and check_dictionary("perpendicular", "ls3", "ls11"):
         add_to_dictionary("perpendicular", "ls10", "ls11");
@@ -658,6 +807,10 @@ def know_ls4():
             add_to_dictionary("equal", "a8", "a4");
             know_a8();
             know_a4();
+        if check_dictionary("congruent", "ar4", "ar5") == False:
+            add_to_dictionary("congruent", "ar4", "ar5");
+            know_ar4();
+            know_ar5();
 
     if check_dictionary("perpendicular", "ls10", "ls11") == False and check_dictionary("perpendicular", "ls4", "ls10"):
         add_to_dictionary("perpendicular", "ls10", "ls11");
@@ -675,33 +828,49 @@ def know_ls5():
         add_to_dictionary("perpendicular", "ls11", "ls12");
 
     if check_dictionary("equal", "ls5", "ls8"):
-        if check_dictionary("equal", "as4", "as6") == False:
-            add_to_dictionary("equal", "as4", "as6");
-            know_as4();
-            know_as6();
-        if check_dictionary("equal", "ar5", "ar6") == False:
-            add_to_dictionary("equal", "ar5", "ar6");
-            know_ar5();
+        if check_dictionary("equal", "ls6", "ls7") == False:
+            add_to_dictionary("equal", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
+        if check_dictionary("equal", "a8", "a3") == False:
+            add_to_dictionary("equal", "a8", "a3");
+            know_a8();
+            know_a3();
+        if check_dictionary("equal", "a7", "a6") == False:
+            add_to_dictionary("equal", "a7", "a6");
+            know_a7();
+            know_a6();
+        if check_dictionary("equal", "a7", "a8") == False:
+            add_to_dictionary("equal", "a7", "a8");
+            know_a7();
+            know_a8();
+        if check_dictionary("congruent", "ar6", "ar5") == False:
+            add_to_dictionary("congruent", "ar6", "ar5");
             know_ar6();
-        if check_dictionary("congruent", "ar5", "ar6") == False:
-            add_to_dictionary("congruent", "ar5", "ar6");
             know_ar5();
-            know_ar6();
         
         
     if check_dictionary("equal", "ls2", "ls5"):
-        if check_dictionary("equal", "as2", "as4") == False:
-            add_to_dictionary("equal", "as2", "as4");
-            know_as2();
-            know_as4();
-        if check_dictionary("equal", "ar4", "ar5") == False:
-            add_to_dictionary("equal", "ar4", "ar5");
-            know_ar4();
+        if check_dictionary("equal", "ls3", "ls4") == False:
+            add_to_dictionary("equal", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
+        if check_dictionary("equal", "a2", "a6") == False:
+            add_to_dictionary("equal", "a2", "a6");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a4", "a6") == False:
+            add_to_dictionary("equal", "a4", "a6");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a8", "a4") == False:
+            add_to_dictionary("equal", "a8", "a4");
+            know_a8();
+            know_a4();
+        if check_dictionary("congruent", "ar5", "ar4") == False:
+            add_to_dictionary("congruent", "ar5", "ar4");
             know_ar5();
-        if check_dictionary("congruent", "ar4", "ar5") == False:
-            add_to_dictionary("congruent", "ar4", "ar5");
             know_ar4();
-            know_ar5();
         
         
     return
@@ -720,6 +889,10 @@ def know_ls6():
             add_to_dictionary("equal", "a7", "a8");
             know_a7();
             know_a8();
+        if check_dictionary("congruent", "ar5", "ar6") == False:
+            add_to_dictionary("congruent", "ar5", "ar6");
+            know_ar5();
+            know_ar6();
 
     if check_dictionary("perpendicular", "ls10", "ls11") == False and check_dictionary("perpendicular", "ls6", "ls10"):
         add_to_dictionary("perpendicular", "ls10", "ls11");
@@ -742,6 +915,10 @@ def know_ls7():
             add_to_dictionary("equal", "a7", "a8");
             know_a7();
             know_a8();
+        if check_dictionary("congruent", "ar5", "ar6") == False:
+            add_to_dictionary("congruent", "ar5", "ar6");
+            know_ar5();
+            know_ar6();
         
     if check_dictionary("perpendicular", "ls10", "ls12") == False and check_dictionary("perpendicular", "ls7", "ls10"):
         add_to_dictionary("perpendicular", "ls10", "ls12");
@@ -759,29 +936,45 @@ def know_ls8():
         add_to_dictionary("perpendicular", "ls11", "ls12");
 
     if check_dictionary("equal", "ls5", "ls8"):
-        if check_dictionary("equal", "as4", "as6") == False:
-            add_to_dictionary("equal", "as4", "as6");
-            know_as4();
-            know_as6();
-        if check_dictionary("equal", "ar5", "ar6") == False:
-            add_to_dictionary("equal", "ar5", "ar6");
-            know_ar5();
+        if check_dictionary("equal", "ls6", "ls7") == False:
+            add_to_dictionary("equal", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
+        if check_dictionary("equal", "a8", "a3") == False:
+            add_to_dictionary("equal", "a8", "a3");
+            know_a8();
+            know_a3();
+        if check_dictionary("equal", "a7", "a6") == False:
+            add_to_dictionary("equal", "a7", "a6");
+            know_a7();
+            know_a6();
+        if check_dictionary("equal", "a7", "a8") == False:
+            add_to_dictionary("equal", "a7", "a8");
+            know_a7();
+            know_a8();
+        if check_dictionary("congruent", "ar6", "ar5") == False:
+            add_to_dictionary("congruent", "ar6", "ar5");
             know_ar6();
-        if check_dictionary("congruent", "ar5", "ar6") == False:
-            add_to_dictionary("congruent", "ar5", "ar6");
             know_ar5();
-            know_ar6();
         
         
     if check_dictionary("equal", "ls2", "ls8"):
-        if check_dictionary("equal", "as2", "as6") == False:
-            add_to_dictionary("equal", "as2", "as6");
-            know_as2();
-            know_as6();
-        if check_dictionary("equal", "ar4", "ar6") == False:
-            add_to_dictionary("equal", "ar4", "ar6");
-            know_ar4();
-            know_ar6();
+        if check_dictionary("equal", "ls1", "ls9") == False:
+            add_to_dictionary("equal", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
+        if check_dictionary("equal", "a2", "a3") == False:
+            add_to_dictionary("equal", "a2", "a3");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a2", "a7") == False:
+            add_to_dictionary("equal", "a2", "a7");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a3", "a4") == False:
+            add_to_dictionary("equal", "a3", "a4");
+            know_a3();
+            know_a4();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
             know_ar4();
@@ -804,6 +997,10 @@ def know_ls9():
             add_to_dictionary("equal", "a3", "a4");
             know_a3();
             know_a4();
+        if check_dictionary("congruent", "ar4", "ar6") == False:
+            add_to_dictionary("congruent", "ar4", "ar6");
+            know_ar4();
+            know_ar6();
 
     if check_dictionary("perpendicular", "ls10", "ls12") == False and check_dictionary("perpendicular", "ls9", "ls10"):
         add_to_dictionary("perpendicular", "ls10", "ls12");
@@ -1428,14 +1625,22 @@ def know_as1():
 
 def know_as2():
     if check_dictionary("equal", "as2", "as4"):
-        if check_dictionary("equal", "ls2", "ls5") == False:
-            add_to_dictionary("equal", "ls2", "ls5");
-            know_ls2();
-            know_ls5();
-        if check_dictionary("equal", "ar4", "ar5") == False:
-            add_to_dictionary("equal", "ar4", "ar5");
-            know_ar4();
-            know_ar5();
+        if check_dictionary("equal", "ls3", "ls4") == False:
+            add_to_dictionary("equal", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
+        if check_dictionary("equal", "a2", "a6") == False:
+            add_to_dictionary("equal", "a2", "a6");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a4", "a6") == False:
+            add_to_dictionary("equal", "a4", "a6");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a8", "a4") == False:
+            add_to_dictionary("equal", "a8", "a4");
+            know_a8();
+            know_a4();
         if check_dictionary("congruent", "ar4", "ar5") == False:
             add_to_dictionary("congruent", "ar4", "ar5");
             know_ar4();
@@ -1443,14 +1648,22 @@ def know_as2():
         
         
     if check_dictionary("equal", "as2", "as6"):
-        if check_dictionary("equal", "ls2", "ls8") == False:
-            add_to_dictionary("equal", "ls2", "ls8");
-            know_ls2();
-            know_ls8();
-        if check_dictionary("equal", "ar4", "ar6") == False:
-            add_to_dictionary("equal", "ar4", "ar6");
-            know_ar4();
-            know_ar6();
+        if check_dictionary("equal", "ls1", "ls9") == False:
+            add_to_dictionary("equal", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
+        if check_dictionary("equal", "a2", "a3") == False:
+            add_to_dictionary("equal", "a2", "a3");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a2", "a7") == False:
+            add_to_dictionary("equal", "a2", "a7");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a3", "a4") == False:
+            add_to_dictionary("equal", "a3", "a4");
+            know_a3();
+            know_a4();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
             know_ar4();
@@ -1464,14 +1677,22 @@ def know_as3():
 
 def know_as4():
     if check_dictionary("equal", "as2", "as4"):
-        if check_dictionary("equal", "ls2", "ls5") == False:
-            add_to_dictionary("equal", "ls2", "ls5");
-            know_ls2();
-            know_ls5();
-        if check_dictionary("equal", "ar4", "ar5") == False:
-            add_to_dictionary("equal", "ar4", "ar5");
-            know_ar4();
-            know_ar5();
+        if check_dictionary("equal", "ls3", "ls4") == False:
+            add_to_dictionary("equal", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
+        if check_dictionary("equal", "a2", "a6") == False:
+            add_to_dictionary("equal", "a2", "a6");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a4", "a6") == False:
+            add_to_dictionary("equal", "a4", "a6");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a8", "a4") == False:
+            add_to_dictionary("equal", "a8", "a4");
+            know_a8();
+            know_a4();
         if check_dictionary("congruent", "ar4", "ar5") == False:
             add_to_dictionary("congruent", "ar4", "ar5");
             know_ar4();
@@ -1479,18 +1700,26 @@ def know_as4():
         
         
     if check_dictionary("equal", "as4", "as6"):
-        if check_dictionary("equal", "ls5", "ls8") == False:
-            add_to_dictionary("equal", "ls5", "ls8");
-            know_ls5();
-            know_ls8();
-        if check_dictionary("equal", "ar5", "ar6") == False:
-            add_to_dictionary("equal", "ar5", "ar6");
-            know_ar5();
+        if check_dictionary("equal", "ls6", "ls7") == False:
+            add_to_dictionary("equal", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
+        if check_dictionary("equal", "a8", "a3") == False:
+            add_to_dictionary("equal", "a8", "a3");
+            know_a8();
+            know_a3();
+        if check_dictionary("equal", "a7", "a6") == False:
+            add_to_dictionary("equal", "a7", "a6");
+            know_a7();
+            know_a6();
+        if check_dictionary("equal", "a7", "a8") == False:
+            add_to_dictionary("equal", "a7", "a8");
+            know_a7();
+            know_a8();
+        if check_dictionary("congruent", "ar6", "ar5") == False:
+            add_to_dictionary("congruent", "ar6", "ar5");
             know_ar6();
-        if check_dictionary("congruent", "ar5", "ar6") == False:
-            add_to_dictionary("congruent", "ar5", "ar6");
             know_ar5();
-            know_ar6();
         
         
     return
@@ -1500,29 +1729,45 @@ def know_as5():
 
 def know_as6():
     if check_dictionary("equal", "as4", "as6"):
-        if check_dictionary("equal", "ls5", "ls8") == False:
-            add_to_dictionary("equal", "ls5", "ls8");
-            know_ls5();
-            know_ls8();
-        if check_dictionary("equal", "ar5", "ar6") == False:
-            add_to_dictionary("equal", "ar5", "ar6");
-            know_ar5();
+        if check_dictionary("equal", "ls6", "ls7") == False:
+            add_to_dictionary("equal", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
+        if check_dictionary("equal", "a8", "a3") == False:
+            add_to_dictionary("equal", "a8", "a3");
+            know_a8();
+            know_a3();
+        if check_dictionary("equal", "a7", "a6") == False:
+            add_to_dictionary("equal", "a7", "a6");
+            know_a7();
+            know_a6();
+        if check_dictionary("equal", "a7", "a8") == False:
+            add_to_dictionary("equal", "a7", "a8");
+            know_a7();
+            know_a8();
+        if check_dictionary("congruent", "ar6", "ar5") == False:
+            add_to_dictionary("congruent", "ar6", "ar5");
             know_ar6();
-        if check_dictionary("congruent", "ar5", "ar6") == False:
-            add_to_dictionary("congruent", "ar5", "ar6");
             know_ar5();
-            know_ar6();
         
         
     if check_dictionary("equal", "as2", "as6"):
-        if check_dictionary("equal", "ls2", "ls8") == False:
-            add_to_dictionary("equal", "ls2", "ls8");
-            know_ls2();
-            know_ls8();
-        if check_dictionary("equal", "ar4", "ar6") == False:
-            add_to_dictionary("equal", "ar4", "ar6");
-            know_ar4();
-            know_ar6();
+       if check_dictionary("equal", "ls1", "ls9") == False:
+            add_to_dictionary("equal", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
+        if check_dictionary("equal", "a2", "a3") == False:
+            add_to_dictionary("equal", "a2", "a3");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a2", "a7") == False:
+            add_to_dictionary("equal", "a2", "a7");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a3", "a4") == False:
+            add_to_dictionary("equal", "a3", "a4");
+            know_a3();
+            know_a4();
         if check_dictionary("congruent", "ar4", "ar6") == False:
             add_to_dictionary("congruent", "ar4", "ar6");
             know_ar4();
@@ -1548,118 +1793,128 @@ def know_ar3():
     return
 
 def know_ar4():
-    if check_dictionary("equal", "ar4", "ar5") or check_dictionary("congruent", "ar4", "ar5"):
-        if check_dictionary("equal", "ls2", "ls5") == False:
-            add_to_dictionary("equal", "ls2", "ls5");
-            know_ls2();
-            know_ls5();
-        if check_dictionary("equal", "as2", "as4") == False:
-            add_to_dictionary("equal", "as2", "as4");
-            know_as2();
-            know_as4();
-        if check_dictionary("congruent", "ar4", "ar5") == False:
-            add_to_dictionary("congruent", "ar4", "ar5");
-            know_ar5();
-        if check_dictionary("equal", "ar4", "ar5") == False:
-            add_to_dictionary("equal", "ar4", "ar5");
-            know_ar5();
+    if check_dictionary("congruent", "ar4", "ar5"):
+        if check_dictionary("equal", "ls3", "ls4") == False:
+            add_to_dictionary("equal", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
+        if check_dictionary("equal", "a2", "a6") == False:
+            add_to_dictionary("equal", "a2", "a6");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a4", "a6") == False:
+            add_to_dictionary("equal", "a4", "a6");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a8", "a4") == False:
+            add_to_dictionary("equal", "a8", "a4");
+            know_a8();
+            know_a4();
         
         
         
 
-    if check_dictionary("equal", "ar4", "ar6") or check_dictionary("congruent", "ar4", "ar6"):
-        if check_dictionary("equal", "ls2", "ls8") == False:
-            add_to_dictionary("equal", "ls2", "ls8");
-            know_ls2();
-            know_ls8();
-        if check_dictionary("equal", "as2", "as6") == False:
-            add_to_dictionary("equal", "as2", "as6");
-            know_as2();
-            know_as6();
-        if check_dictionary("congruent", "ar4", "ar6") == False:
-            add_to_dictionary("congruent", "ar4", "ar6");
-            know_ar6();
-        if check_dictionary("equal", "ar4", "ar6") == False:
-            add_to_dictionary("equal", "ar4", "ar6");
-            know_ar6();
+    if check_dictionary("congruent", "ar4", "ar6"):
+        if check_dictionary("equal", "ls1", "ls9") == False:
+            add_to_dictionary("equal", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
+        if check_dictionary("equal", "a2", "a3") == False:
+            add_to_dictionary("equal", "a2", "a3");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a2", "a7") == False:
+            add_to_dictionary("equal", "a2", "a7");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a3", "a4") == False:
+            add_to_dictionary("equal", "a3", "a4");
+            know_a3();
+            know_a4();
         
         
         
     return
 
 def know_ar5():
-    if check_dictionary("equal", "ar4", "ar5") or check_dictionary("congruent", "ar4", "ar5"):
-        if check_dictionary("equal", "ls2", "ls5") == False:
-            add_to_dictionary("equal", "ls2", "ls5");
-            know_ls2();
-            know_ls5();
-        if check_dictionary("equal", "as2", "as4") == False:
-            add_to_dictionary("equal", "as2", "as4");
-            know_as2();
-            know_as4();
-        if check_dictionary("congruent", "ar4", "ar5") == False:
-            add_to_dictionary("congruent", "ar4", "ar5");
-            know_ar4();
-        if check_dictionary("equal", "ar4", "ar5") == False:
-            add_to_dictionary("equal", "ar4", "ar5");
-            know_ar4();
-        
-        
-        
+    if check_dictionary("congruent", "ar4", "ar5"):
+        if check_dictionary("equal", "ls3", "ls4") == False:
+            add_to_dictionary("equal", "ls3", "ls4");
+            know_ls3();
+            know_ls4();
+        if check_dictionary("equal", "a2", "a6") == False:
+            add_to_dictionary("equal", "a2", "a6");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a4", "a6") == False:
+            add_to_dictionary("equal", "a4", "a6");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a8", "a4") == False:
+            add_to_dictionary("equal", "a8", "a4");
+            know_a8();
+            know_a4();
+       
 
-    if check_dictionary("equal", "ar5", "ar6") or check_dictionary("congruent", "ar5", "ar6"):
-        if check_dictionary("equal", "ls5", "ls8") == False:
-            add_to_dictionary("equal", "ls5", "ls8");
-            know_ls5();
-            know_ls8();
-        if check_dictionary("equal", "as4", "as6") == False:
-            add_to_dictionary("equal", "as4", "as6");
-            know_as4();
-            know_as6();
-        if check_dictionary("congruent", "ar5", "ar6") == False:
-            add_to_dictionary("congruent", "ar5", "ar6");
-            know_ar6();
-        if check_dictionary("equal", "ar5", "ar6") == False:
-            add_to_dictionary("equal", "ar5", "ar6");
-            know_ar6();
+    if check_dictionary("congruent", "ar5", "ar6"):
+        if check_dictionary("equal", "ls6", "ls7") == False:
+            add_to_dictionary("equal", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
+        if check_dictionary("equal", "a8", "a3") == False:
+            add_to_dictionary("equal", "a8", "a3");
+            know_a8();
+            know_a3();
+        if check_dictionary("equal", "a7", "a6") == False:
+            add_to_dictionary("equal", "a7", "a6");
+            know_a7();
+            know_a6();
+        if check_dictionary("equal", "a7", "a8") == False:
+            add_to_dictionary("equal", "a7", "a8");
+            know_a7();
+            know_a8();
    
     return
 
 def know_ar6():
-    if check_dictionary("equal", "ar4", "ar6") or check_dictionary("congruent", "ar4", "ar6"):
-        if check_dictionary("equal", "ls2", "ls8") == False:
-            add_to_dictionary("equal", "ls2", "ls8");
-            know_ls2();
-            know_ls8();
-        if check_dictionary("equal", "as2", "as6") == False:
-            add_to_dictionary("equal", "as2", "as6");
-            know_as2();
-            know_as6();
-        if check_dictionary("congruent", "ar4", "ar6") == False:
-            add_to_dictionary("congruent", "ar4", "ar6");
-            know_ar4();
-        if check_dictionary("equal", "ar4", "ar6") == False:
-            add_to_dictionary("equal", "ar4", "ar6");
-            know_ar4();
+    if check_dictionary("congruent", "ar4", "ar6"):
+        if check_dictionary("equal", "ls1", "ls9") == False:
+            add_to_dictionary("equal", "ls1", "ls9");
+            know_ls1();
+            know_ls9();
+        if check_dictionary("equal", "a2", "a3") == False:
+            add_to_dictionary("equal", "a2", "a3");
+            know_a2();
+            know_a3();
+        if check_dictionary("equal", "a2", "a7") == False:
+            add_to_dictionary("equal", "a2", "a7");
+            know_a2();
+            know_a7();
+        if check_dictionary("equal", "a3", "a4") == False:
+            add_to_dictionary("equal", "a3", "a4");
+            know_a3();
+            know_a4();
         
         
         
 
-    if check_dictionary("equal", "ar5", "ar6") or check_dictionary("congruent", "ar5", "ar6"):
-        if check_dictionary("equal", "ls5", "ls8") == False:
-            add_to_dictionary("equal", "ls5", "ls8");
-            know_ls5();
-            know_ls8();
-        if check_dictionary("equal", "as4", "as6") == False:
-            add_to_dictionary("equal", "as4", "as6");
-            know_as4();
-            know_as6();
-        if check_dictionary("congruent", "ar5", "ar6") == False:
-            add_to_dictionary("congruent", "ar5", "ar6");
-            know_ar5();
-        if check_dictionary("equal", "ar5", "ar6") == False:
-            add_to_dictionary("equal", "ar5", "ar6");
-            know_ar5();
+    if check_dictionary("congruent", "ar5", "ar6"):
+        if check_dictionary("equal", "ls6", "ls7") == False:
+            add_to_dictionary("equal", "ls6", "ls7");
+            know_ls6();
+            know_ls7();
+        if check_dictionary("equal", "a8", "a3") == False:
+            add_to_dictionary("equal", "a8", "a3");
+            know_a8();
+            know_a3();
+        if check_dictionary("equal", "a7", "a6") == False:
+            add_to_dictionary("equal", "a7", "a6");
+            know_a7();
+            know_a6();
+        if check_dictionary("equal", "a7", "a8") == False:
+            add_to_dictionary("equal", "a7", "a8");
+            know_a7();
+            know_a8();
    
     return
 
