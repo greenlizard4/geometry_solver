@@ -3,7 +3,6 @@
 def get_current_weight(path):
     current_weight = 0
     for edge in path:
-        #print(edge)
         current_weight += edge[2]
     return current_weight
 
@@ -20,39 +19,24 @@ def get_path_nodes(path):
 
 
 def find_next(path, all_edges, A, B, C, D):
-    #print(path)
-    #current_weight = get_current_weight(path)
-    #if(current_weight >= D):
-    #    return []
-
-    #if(len(path) + 2 > C):
-    #    return []
-
     possible_next = []
     last_node = path[-1][1]
     nodes_in_path = get_path_nodes(path)
     for edge in all_edges:
         if(edge[1] in nodes_in_path):
             continue
-        #reverse_edge = edge.copy()
-        #reverse_edge[0] = edge[1]
-        #reverse_edge[1] = edge[0]
         if(edge[0] == last_node):
-        #if(edge[0] == last_node and current_weight + edge[2] < D):
-            #if(edge not in path and reverse_edge not in path): #the path cannot go over the same edge twice
             possible_next.append(edge)
     return possible_next
 
 def prune_paths(paths, C, D):
     results = paths.copy()
-    #print('PRUNING', paths)
     for path in paths:
         if(len(path) + 1 != C or get_current_weight(path) >= D):
             results.remove(path)
     return results
 
 def fits_condition(path, A, B, C, D):
-    #print(path)
     if(path[0][0] == A and path[-1][1] == B and len(path) + 1 == C and get_current_weight(path) < D):
         return True
     return False
@@ -60,7 +44,6 @@ def fits_condition(path, A, B, C, D):
 def get_all(paths, all_edges, A, B, C, D):
     all_possible_paths = []
     for path in paths:
-        #print(path)
         if(fits_condition(path, A, B, C, D)):
             all_possible_paths.append(path)
             continue
@@ -90,9 +73,6 @@ def find_paths(all_edges, A, B, C, D):
     
     if(len(possible_starts) == 0):
         return []
-
-    #print(all_edges)
-    #print('STARTS',possible_starts)
 
     result_paths = get_all(possible_starts, all_edges, A, B, C, D)
 

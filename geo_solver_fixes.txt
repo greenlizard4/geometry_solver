@@ -1,0 +1,649 @@
+#
+# I added a new function to call the know functions (located at the bottom)
+# read the note right above it
+#
+# I a lot of this is superfluous and shouldn't do anything actually
+# I realized that these were notes for the know functions and not the predicates
+# There should be an add to dictionary function at the start of each predicate, even if there is a null for now
+# When I get back, there I will fix these functions if you haven't already
+
+def check_dictionary(key, name1, name2, value='NULL'):
+	dictionary.setdefault(key,[])
+	if(value == 'NULL'):
+		return [name1,name2] in dictionary[key] or [name2,name1] in dictionary[key]
+	if(key == 'sum_value'):
+		return [name1,name2,value] in dictionary[key] or [name2,name1,value] in dictionary[key]
+	return [name1,name2,value] in dictionary[key]
+	
+#Predicates
+
+def set_parallel(name1, name2):
+	add_to_dictionary('parallel', name1, name2)
+	
+    if(name1 in ['ls1','ls2','ls3','ls10']):
+        if(name2 in ['ls1','ls2','ls3','ls10']):
+            #do nothing
+            return
+        elif(name2 in ['ls4','ls5','ls6','ls7','ls8','ls9','ls11','ls12']):
+            #NULL
+            return
+        else:
+            #NULL
+            return
+    elif(name1 in ['ls4','ls5','ls6','ls11']):
+        if(name2 in ['ls4','ls5','ls6','ls11']):
+            #do nothing
+            return
+        elif(name2 in ['ls1','ls2','ls3','ls10','ls7','ls8','ls9','ls12']):
+            #NULL
+            return
+        else:
+            #NULL
+            return
+    elif(name1 in ['ls7','ls8','ls9','ls12','ls4','ls5','ls6','ls11']):
+        if(name2 in ['ls1','ls2','ls3','ls10']):
+            #NULL
+			return
+        elif(name2 in ['ls7','ls8','ls9','ls12']):
+            #do nothing
+            return
+        else:
+            #NULL
+            return
+    else:
+        #NULL
+        return
+    return
+
+def set_perpendicular(name1, name2):
+    if(name1 in ['ls1','ls2','ls3','ls10']):
+        if(name2 in ['ls1','ls2','ls3','ls10']):
+            #NULL
+            return
+        elif(name2 in ['ls4','ls5','ls6','ls11']):
+            #set_sum_value('a1','a9',90)
+            return
+        elif(name2 in ['ls7','ls8','ls9','ls12']):
+            #set_sum_value('a5','a9',90)
+            return
+        else:
+            #NULL
+            return
+    elif(name1 in ['ls4','ls5','ls6','ls11']):
+        if(name2 in ['ls1','ls2','ls3','ls10']):
+            #set_sum_value('a1','a9',90)
+            return
+        elif(name2 in ['ls4','ls5','ls6','ls11']):
+            #NULL
+            return
+        elif(name2 in ['ls7','ls8','ls9','ls12']):
+            #set_sum_value('a1','a5',90)
+            return
+        else:
+            #NULL
+            return
+    elif(name1 in ['ls7','ls8','ls9','ls12']):
+        if(name2 in ['ls1','ls2','ls3','ls10']):
+            #set_sum_value('a5','a9',90)
+            return
+        elif(name2 in ['ls4','ls5','ls6','ls11']):
+            #set_sum_value('a1','a5',90)
+            return
+        elif(name2 in ['ls7','ls8','ls9','ls12']):
+            #NULL
+            return
+        else:
+            #NULL
+            return
+    return
+
+def set_equal(name1, name2):
+	add_to_dictionary('equal', name1, name2)
+    if(name1 == 'ls1'):
+        if(name2 == 'ls9'):
+			#set_equal('a2','a3')
+			#set_equal('a3','a4')
+			#set_equal('a2','a7')
+			#set_congruent('ar4','ar6')
+            return
+    elif(name1 == 'ls2'):
+        if(name2 == 'ls5'):
+			#set_equal('as2','as4')
+			#set_equal('ar4','ar5')
+            #set_congruent('ar4','ar5')
+			#set angles congruent?
+            return
+        if(name2 == 'ls8'):
+            #set_equal('as2','as6')
+			#set_equal('ar4','ar6')
+            #set_congruent('ar4','ar6')
+			#set angles congruent?
+            return
+    elif(name1 == 'ls3'):
+        if(name2 == 'ls4'):
+            #set_equal('a4','a6')
+			#set_equal('a4','a8')
+			#set_equal('a6','a2')
+			#set_congruent('ar4','ar5')
+            return
+        return
+    elif(name1 == 'ls4'):
+        if(name2 == 'ls3'):
+			#set_equal('a4','a6')
+			#set_equal('a4','a8')
+			#set_equal('a6','a2')
+			#set_congruent('ar4','ar5')
+            return
+        return
+    elif(name1 == 'ls5'):
+        if(name2 == 'ls2'):
+			#set_equal('as2','as4')
+			#set_equal('ar4','ar5')
+            #set_congruent('ar4','ar5')
+			#set angles congruent?
+            return
+        if(name2 == 'ls8'):
+			#set_equal('as4','as6')
+			#set_equal('ar5','ar6')
+			#set_congruent('ar5','ar6')
+			#set angles congruent?
+            return
+        return
+    elif(name1 == 'ls6'):
+        if(name2 == 'ls7'):
+			#set_equal('a7','a8')
+			#set_equal('a7','a6')
+			#set_equal('a8','a3')
+			#set_congruent('ar5','ar6')
+            return
+        return
+    elif(name1 == 'ls7'):
+        if(name2 == 'ls6'):
+            #set_equal('a7','a8')
+			#set_equal('a7','a6')
+			#set_equal('a8','a3')
+			#set_congruent('ar5','ar6')
+            return
+        return
+    elif(name1 == 'ls8'):
+        if(name2 == 'ls2'):
+            #set_equal('as2','as6')
+			#set_equal('ar4','ar6')
+            #set_congruent('ar4','ar6')
+			#set angles congruent?
+            return
+        if(name2 == 'ls5'):
+            #set_equal('as4','as6')
+			#set_equal('ar5','ar6')
+			#set_congruent('ar5','ar6')
+			#set angles congruent?
+            return
+        return
+    elif(name1 == 'ls9'):
+        if(name2 == 'ls1'):
+            #set_equal('a2','a3')
+			#set_equal('a3','a4')
+			#set_equal('a2','a7')
+			#set_congruent('ar4','ar6')
+            return
+        return
+    elif(name1 == 'ls10'):
+        if(name2 == 'ls11'):
+			#set_equal('a1','a9')
+            return
+        if(name2 == 'ls12'):
+			#set_equal('a5','a9')
+            return
+        return
+    elif(name1 == 'ls11'):
+        if(name2 == 'ls10'):
+			#set_equal('a1','a9')
+            return
+        if(name2 == 'ls12'):
+			#set_equal('a1','a5')
+            return
+        return
+    elif(name1 == 'ls12'):
+        if(name2 == 'ls10'):
+			#set_equal('a5','a9')
+            return
+        if(name2 == 'ls11'):
+			#set_equal('a1','a9')
+            return
+        return
+    #ARCS
+    elif(name1 == 'as1'):
+        return
+    elif(name1 == 'as2'):
+        if(name2 == 'as4'):
+            #set_congruent('ar4','ar5')
+            return
+        if(name2 == 'as6'):
+			#set_congruent('ar4','ar6')
+            return
+        return
+    elif(name1 == 'as3'):
+        return
+    elif(name1 == 'as4'):
+        if(name2 == 'as2'):
+			#set_congruent('ar4','ar5')
+            return
+        if(name2 == 'as6'):
+			#set_congruent('ar5','ar6')
+            return
+        return
+    elif(name1 == 'as5'):
+        return
+    elif(name1 == 'as6'):
+        if(name2 == 'as2'):
+            #set_congruent('ar4','as6')
+            return
+        if(name2 == 'as4'):
+            #set_congruent('ar5','ar6')
+            return
+        return
+    elif(name1 == 'as7'):
+        #NULL
+        return
+    #AREAS
+    elif(name1 == 'ar1'):
+        return
+    elif(name1 == 'ar2'):
+        return
+    elif(name1 == 'ar3'):
+        return
+    elif(name1 == 'ar4'):
+        if(name2 == 'ar5'):
+            #set_congruent('ar4','ar5')
+            return
+        elif(name2 == 'ar6'):
+            #set_congruent('ar4','ar6')
+            return
+        return
+    elif(name1 == 'ar5'):
+	    if(name2 == 'ar4'):
+            #set_congruent('ar4','ar5')
+            return
+        elif(name2 == 'ar6'):
+            #set_congruent('ar5','ar6')
+            return
+        return
+    elif(name1 == 'ar6'):
+        if(name2 == 'ar4'):
+            #set_congruent('ar4','ar6')
+            return
+        elif(name2 == 'ar5'):
+            #set_congruent('ar5','ar6')
+            return
+        return
+    elif(name1 == 'ar7'):
+        return
+    elif(name1 == 'ar8'):
+        return
+	elif(name1 == 'ar9'):
+        return
+    #ANGLES
+    elif(name1 == 'a1'):
+        if(name2 == 'a5'):
+			#set_equal('ls11','ls12')
+            return
+        elif(name2 == 'a9'):
+			#set_equal('ls10','ls11')
+            return
+        return
+    elif(name1 == 'a2'):
+        if(name2 == 'a3'):
+			#set_equal('ls1','ls9')
+			#set_congruent('ar4','ar6')
+			#set_equal('a2','a7')
+			#set_equal('a3','a4')
+            return
+        return
+    elif(name1 == 'a3'):
+        if(name2 == 'a2'):
+			#set_equal('ls1','ls9')
+            #set_congruent('ar4','ar6')
+			#set_equal('a2','a7')
+			#set_equal('a3','a4')
+            return
+        return
+    elif(name1 == 'a4'):
+        if(name2 == 'a6'):
+			#set_equal('ls3','ls4')
+            #set_congruent('ar4','ar5')
+			#set_equal('a4','a8')
+			#set_equal('a6','a2')
+            return
+        return
+    elif(name1 == 'a5'):
+        if(name2 == 'a1'):
+            #set_congruent('ls11','ls12')
+            return
+        elif(name2 == 'a9'):
+            #set_congruent('ls10','ls12')
+            return
+        return
+    elif(name1 == 'a6'):
+        if(name2 == 'a4'):
+			#set_equal('ls3','ls4')
+			#set_congruent('ar4','ar5')
+			#set_equal('a4','a8')
+			#set_equal('a6','a2')
+            return
+        return
+    elif(name1 == 'a7'):
+        if(name2 == 'a8'):
+			#set_equal('ls6','ls7')
+			#set_congruent('ar5','ar6')
+			#set_equal('a7','a6')
+			#set_equal('a8','a3')
+            return
+        return
+    elif(name1 == 'a8'):
+        if(name2 == 'a7'):
+			set_equal('ls6','ls7')
+			set_congruent('ar5','ar6')
+			set_equal('a7','a6')
+			set_equal('a8','a3')
+            return
+        return
+    elif(name1 == 'a9'):
+        if(name2 == 'a1'):
+            #set_congruent('ls11','ls12')
+            return
+        elif(name2 == 'a5'):
+            #set_congruent('ls10','ls12')
+            return
+        return
+    elif(name1 == 'b1'):
+        if(name2 == 'b2' or name2 == 'd1'):
+            #b1 = c1 = d1 = a2 = 90
+            set_sum_value('b1', 'c1', 180)
+            set_sum_value('b1', 'd1', 180)
+            return
+        return
+    elif(name1 == 'b2'):
+        if(name2 == 'c2' or name2 == 'd2'):
+            #b2 = c2 = d2 = a4 = 90
+            #set_sum_value('b2', 'c2', 180)
+            #set_sum_value('b2', 'd2', 180)
+            return
+        return
+    elif(name1 == 'b3'):
+        if(name2 == 'c3' or name2 == 'd3'):
+            #b3 = c3 = d3 = a6 = 90
+            #set_sum_value('b3', 'c3', 180)
+            #set_sum_value('b3', 'd3', 180)
+            return
+        return
+    elif(name1 == 'b4'):
+        if(name2 == 'c4' or name2 == 'd4'):
+            #b4 = c4 = d4 = a8 = 90
+            #set_sum_value('b4', 'c4', 180)
+            #set_sum_value('b4', 'd4', 180)
+            return
+        return
+    elif(name1 == 'b5'):
+        if(name2 == 'c5' or name2 == 'd5'):
+            #b5 = c5 = d5 = a7 = 90
+            #set_sum_value('b5', 'c5', 180)
+            #set_sum_value('b5', 'd5', 180)
+            return
+        return
+    elif(name1 == 'b6'):
+        if(name2 == 'c6' or name2 == 'd6'):
+            #b6 = c6 = d6 = a3 = 90
+            #set_sum_value('b6', 'c6', 180)
+            #set_sum_value('b6', 'd6', 180)
+            return
+        return
+    elif(name1 == 'c1'):
+        if(name2 == 'b1' or name2 == 'a2'):
+            #b1 = c1 = d1 = a2 = 90
+			set_sum_value('c1','b1',180)
+			set_sum_value('c1','a2',180)
+            return
+        return
+    elif(name1 == 'c2'):
+        if(name2 == 'b2' or name2 == 'a4'):
+            #b2 = c2 = d2 = a4 = 90
+			set_sum_value('c2','b2',180)
+			set_sum_value('c2','a4',180)
+            return
+        return
+    elif(name1 == 'c3'):
+        if(name2 == 'b3' or name2 == 'a6'):
+            #b3 = c3 = d3 = a6 = 90
+			set_sum_value('c3','b3',180)
+			set_sum_value('c3','a6',180)
+            return
+        return
+    elif(name1 == 'c4'):
+        if(name2 == 'b4' or name2 == 'a8'):
+            #b4 = c4 = d4 = a8 = 90
+			set_sum_value('c4','b4',180)
+			set_sum_value('c4','a8',180)
+            return
+        return
+    elif(name1 == 'c5'):
+        if(name2 == 'b5' or name2 == 'a7'):
+            #b5 = c5 = d5 = a7 = 90
+			set_sum_value('c5','b5',180)
+			set_sum_value('c5','a7',180)
+            return
+        return
+    elif(name1 == 'c6'):
+        if(name2 == 'b6' or name2 == 'a3'):
+            #b6 = c6 = d6 = a3 = 90
+			set_sum_value('c1','b1',180)
+			set_sum_value('c1','a3',180)
+            return
+        return
+    elif(name1 == 'd1'):
+        if(name2 == 'b1' or name2 == 'a2'):
+            #b1 = c1 = d1 = a2 = 90
+			set_sum_value('d1','b1',180)
+			set_sum_value('d1','a2',180)
+            return
+        return
+    elif(name1 == 'd2'):
+        if(name2 == 'b2' or name2 == 'a4'):
+            #b2 = c2 = d2 = a4 = 90
+			set_sum_value('d2','b2',180)
+			set_sum_value('d2','a4',180)
+            return
+        return
+    elif(name1 == 'd3'):
+        if(name2 == 'b3' or name2 == 'a6'):
+            #b3 = c3 = d3 = a6 = 90
+			set_sum_value('d3','b3',180)
+			set_sum_value('d3','a6',180)
+            return
+        return
+    elif(name1 == 'd4'):
+        if(name2 == 'b4' or name2 == 'a8'):
+            #b4 = c4 = d4 = a8 = 90
+			set_sum_value('d4','b4',180)
+			set_sum_value('d4','a8',180)
+            return
+        return
+    elif(name1 == 'd5'):
+        if(name2 == 'b5' or name2 == 'a7'):
+            #b5 = c5 = d5 = a7 = 90
+			set_sum_value('d5','b5',180)
+			set_sum_value('d5','a7',180)
+            return
+        return
+    elif(name1 == 'd6'):
+        if(name2 == 'b6' or name2 == 'a3'):
+            #b6 = c6 = d6 = a3 = 90
+			set_sum_value('d6','b6',180)
+			set_sum_value('d6','a3',180)
+            return
+        return
+
+def set_fraction(name1, name2, fraction):
+	add_to_dictionary('fraction', name1, name2,fraction)
+    return
+
+def set_sum_value(name1, name2, sum_value):
+	add_to_dictionary('sum_value', name1, name2, sum_value)
+	if(name1 in angles and name2 in angles and sum_value > 360):
+		#NULL
+		return
+		
+	if(sum_value == 0):
+		#NULL
+		return
+		
+	if(sum_value == 90):
+		if(name1 == 'a1'):
+			if(name2 == 'a5'):
+				set_parallel('ls11','ls12')
+			elif(name2 == 'a9'):
+				set_parallel('ls10','ls11')
+		elif(name1 == 'a5'):
+			if(name2 == 'a1'):
+				set_parallel('ls11','ls12')
+			elif(name2 == 'a9'):
+				set_parallel('ls10','ls12')
+		if(name1 == 'a9'):
+			if(name2 == 'a1'):
+				set_parallel('ls10','ls11')
+			elif(name2 == 'a5'):
+				set_parallel('ls10','ls12')
+    return
+
+def set_tan(name1, name2):
+	#NULL
+    return
+
+#NOT INPUTS
+def set_similar(name1, name2):
+    return
+
+def set_congruent(name1, name2):
+    return
+
+
+#
+#
+#	PUT THIS RIGHT BEFORE get_all()
+#
+#
+def know_call(name1, name2):
+	if(name1 == 'ls1' or name2 == 'ls1'):
+		know_ls1()
+	if(name1 == 'ls2' or name2 == 'ls2'):
+		know_ls2()
+	if(name1 == 'ls3' or name2 == 'ls3'):
+		know_ls3()
+	if(name1 == 'ls4' or name2 == 'ls4'):
+		know_ls4()
+	if(name1 == 'ls5' or name2 == 'ls5'):
+		know_ls5()
+	if(name1 == 'ls6' or name2 == 'ls6'):
+		know_ls6()
+	if(name1 == 'ls7' or name2 == 'ls7'):
+		know_ls7()
+	if(name1 == 'ls8' or name2 == 'ls8'):
+		know_ls8()
+	if(name1 == 'ls9' or name2 == 'ls9'):
+		know_ls9()
+	if(name1 == 'ls10' or name2 == 'ls10'):
+		know_ls10()
+	if(name1 == 'ls11' or name2 == 'ls11'):
+		know_ls11()
+	if(name1 == 'ls12' or name2 == 'ls12'):
+		know_ls12()
+	#ARCS
+	if(name1 == 'as1' or name2 == 'as1'):
+		know_as1()
+	if(name1 == 'as2' or name2 == 'as2'):
+		know_as2()
+	if(name1 == 'as3' or name2 == 'as3'):
+		know_as3()
+	if(name1 == 'as4' or name2 == 'as4'):
+		know_as4()
+	if(name1 == 'as5' or name2 == 'as5'):
+		know_as5()
+	if(name1 == 'as6' or name2 == 'as6'):
+		know_as6()
+	if(name1 == 'as7' or name2 == 'as7'):
+		know_as7()
+		
+	#ANGLES
+	if(name1 == 'a1' or name2 == 'a1'):
+		know_a1()
+	if(name1 == 'a2' or name2 == 'a2'):
+		know_a2()
+	if(name1 == 'a3' or name2 == 'a3'):
+		know_a3()
+	if(name1 == 'a4' or name2 == 'a4'):
+		know_a4()
+	if(name1 == 'a5' or name2 == 'a5'):
+		know_a5()
+	if(name1 == 'a6' or name2 == 'a6'):
+		know_a6()
+	if(name1 == 'a7' or name2 == 'a7'):
+		know_a7()
+	if(name1 == 'a8' or name2 == 'a8'):
+		know_a8()
+	if(name1 == 'a9' or name2 == 'a9'):
+		know_a9()
+	if(name1 == 'b1' or name2 == 'b1'):
+		know_b1()
+	if(name1 == 'b2' or name2 == 'b2'):
+		know_b2()
+	if(name1 == 'b3' or name2 == 'b3'):
+		know_b3()
+	if(name1 == 'b4' or name2 == 'b4'):
+		know_b4()
+	if(name1 == 'b5' or name2 == 'b5'):
+		know_b5()
+	if(name1 == 'b6' or name2 == 'b6'):
+		know_b6()
+	if(name1 == 'c1' or name2 == 'c1'):
+		know_c1()
+	if(name1 == 'c2' or name2 == 'c2'):
+		know_c2()
+	if(name1 == 'c3' or name2 == 'c3'):
+		know_c3()
+	if(name1 == 'c4' or name2 == 'c4'):
+		know_c4()
+	if(name1 == 'c5' or name2 == 'c5'):
+		know_c5()
+	if(name1 == 'c6' or name2 == 'c6'):
+		know_c6()
+	if(name1 == 'd1' or name2 == 'd1'):
+		know_d1()
+	if(name1 == 'd2' or name2 == 'd2'):
+		know_d2()
+	if(name1 == 'd3' or name2 == 'd3'):
+		know_d3()
+	if(name1 == 'd4' or name2 == 'd4'):
+		know_d4()
+	if(name1 == 'd5' or name2 == 'd5'):
+		know_d5()
+	if(name1 == 'd6' or name2 == 'd6'):
+		know_d6()
+		
+	#AREAS
+	if(name1 == 'ar1' or name2 == 'ar1'):
+		know_ar1()
+	if(name1 == 'ar2' or name2 == 'ar2'):
+		know_ar2()
+	if(name1 == 'ar3' or name2 == 'ar3'):
+		know_ar3()
+	if(name1 == 'ar4' or name2 == 'ar4'):
+		know_ar4()
+	if(name1 == 'ar5' or name2 == 'ar5'):
+		know_ar5()
+	if(name1 == 'ar6' or name2 == 'ar6'):
+		know_ar6()
+	if(name1 == 'ar7' or name2 == 'ar7'):
+		know_ar7()
+	if(name1 == 'ar8' or name2 == 'ar8'):
+		know_ar8()
+	if(name1 == 'ar9' or name2 == 'ar9'):
+		know_ar9()

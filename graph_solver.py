@@ -29,9 +29,6 @@ all_edges = []
 with open(csv_filename) as csvfile:
     read_csv = csv.reader(csvfile, delimiter=',')
     for row in read_csv:
-        #if(float(row[2]) < D):
-        #    all_edges.append([int(row[0]),int(row[1]),float(row[2])])
-        #    all_edges.append([int(row[1]),int(row[0]),float(row[2])])
         all_edges.append([int(row[0]),int(row[1]),float(row[2])])
         all_edges.append([int(row[1]),int(row[0]),float(row[2])])
 
